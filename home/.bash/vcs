@@ -1,0 +1,60 @@
+###############
+# ~/.bash/vcs #
+###############
+
+#!/bin/bash
+# vim:set syntax=bash
+
+# Help and inspiration taken from:
+# http://jeditoolkit.com/2010/09/04/git-status-in-bash-prompt.html
+# http://asimilatorul.com/index.php/2010/04/13/bash-prompt-with-git-branch-and-status/
+# http://gwolf.org/blog/my-git-tips
+
+source ~/.bash/colors
+
+# Git functions
+function parse_git_dirty {
+ [[ $(git status 2> /dev/null | tail -n1) != "nothing to commit (working directory clean)" ]] && echo "true"
+}
+function parse_git_branch {
+ git branch --no-color 2> /dev/null | sed -e '/^[^*]/d' -e "s/* \(.*\)/\1/"
+}
+function parse_git_commit_hash {
+ git log -n 1 --format="%h" 2> /dev/null
+}
+
+function git_output {
+  if [ "$(basename $(pwd))" == "puppet-modules" ]; then
+    return
+  fi
+  DIRTY=$(parse_git_dirty)
+  BRANCH=$(parse_git_branch)
+  HASH=$(parse_git_commit_hash)
+  if [ -n "$BRANCH" ]; then
+
+    # Branch color - green for master, yellow for development, cyan for other
+    BRANCH_COLOR=${WHITE_BOLD}
+    if [ "$BRANCH" = "master" ]; then 
+      BRANCH_COLOR=${BRANCH_COLOR}${RED_BOLD}
+    elif [ "$BRANCH" = "development" ]; then
+      BRANCH_COLOR=${BRANCH_COLOR}${YELLOW_BOLD}
+    else
+      BRANCH_COLOR=${BRANCH_COLOR}${CYAN_BOLD}
+    fi
+    if [ -n "$DIRTY" ]; then
+      status=$(git status --porcelain 2> /dev/null)
+      mod=$(echo "$status" | grep '^[A-Z ]M ' | wc -l | tr -s ' ' | sed 's/^[ ]//g' 2> /dev/null)
+      stg=$(echo "$status" | grep '^[A-Z]' | wc -l | tr -s ' ' | sed 's/^[ ]//g' 2> /dev/null)
+      del=$(echo "$status" | grep '^[A-Z ]D' | wc -l | tr -s ' ' | sed 's/^[ ]//g' 2> /dev/null)
+      unt=$(echo "$status" | grep '?? ' | wc -l | tr -s ' ' | sed 's/^[ ]//g' 2> /dev/null)
+      if [ $mod != 0 ]; then MODIFIED="${MODIFIED} ${YELLOW}${mod}M${RESET}"; fi
+      if [ $del != 0 ]; then MODIFIED="${MODIFIED} ${RED}${del}D${RESET}"; fi
+      if [ $unt != 0 ]; then MODIFIED="${MODIFIED} ${RED}${unt}U${RESET}"; fi
+      if [ $stg != 0 ]; then MODIFIED="${MODIFIED} ${GREEN}${stg}S${RESET}"; fi
+    fi
+    #echo -e "${RESET}[git: (${HASH}) ${BRANCH_COLOR}${BRANCH}${RESET}${MODIFIED}] "
+    echo -e "${RESET}(${BRANCH_COLOR}${BRANCH}${RESET}${MODIFIED}) "
+  elif [ x`git config core.bare`x = "xtruex" ]; then
+    echo -e "${RESET}[git: ${CYAN_BOLD}bare repo${RESET}"
+  fi
+}
