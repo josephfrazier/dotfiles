@@ -1,0 +1,29 @@
+[user]
+  name = Joseph Frazier
+  email = joseph@onsip.com
+[core]
+  editor = vim
+  excludesfile = /Users/joseph/.gitignore
+  pager = less
+[color]
+	ui = auto
+[alias]
+  co = checkout
+  st = status -sb
+  ci = commit
+  br = branch
+  root = !pwd
+  # http://oli.jp/2012/git-powerup/#diff
+  d = diff --color-words
+  s = show --color-words
+  # http://stackoverflow.com/q/8136864
+  m = log --graph --full-history --all --color --decorate --oneline
+  cp = cherry-pick
+  sm = submodule
+[push]
+  default = tracking
+[filter "media"]
+  clean = git-media-clean %f
+  smudge = git-media-smudge %f
+[log]
+	decorate = short
