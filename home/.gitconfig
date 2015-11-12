@@ -27,3 +27,5 @@
   smudge = git-media-smudge %f
 [log]
 	decorate = short
+[hub]
+	protocol = https
