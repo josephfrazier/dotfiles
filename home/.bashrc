@@ -38,3 +38,6 @@ source ~/.nvm/nvm.sh
 [ -f /Users/josephfrazier/.travis/travis.sh ] && source /Users/josephfrazier/.travis/travis.sh
 
 source "$HOME/.homesick/repos/homeshick/homeshick.sh"
+
+# from `brew install thefuck`
+eval "$(thefuck --alias)"
