@@ -10,6 +10,7 @@ alias updatedb='sudo /usr/libexec/locate.updatedb'
 # http://raamdev.com/2008/howto-install-md5sum-sha1sum-on-mac-os-x/
 alias md5sum='md5 -r'
 alias less='less -R' # preserve colors
+alias vlc='open -a vlc'
 
 # http://www.reddit.com/r/commandline/comments/ocawp/git_status_check_in_bash_prompt/c3g6w6t
 source ~/.bash/vcs
