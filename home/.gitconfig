@@ -6,7 +6,7 @@
   excludesfile = /Users/joseph/.gitignore
   pager = less
 [color]
-	ui = auto
+  ui = auto
 [alias]
   co = checkout
   st = status -sb
@@ -26,6 +26,6 @@
   clean = git-media-clean %f
   smudge = git-media-smudge %f
 [log]
-	decorate = short
+  decorate = short
 [hub]
-	protocol = https
+  protocol = https
