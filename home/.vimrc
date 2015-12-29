@@ -62,6 +62,7 @@ set backspace=indent,eol,start
 
 " https://robots.thoughtbot.com/5-useful-tips-for-a-better-commit-message
 autocmd Filetype gitcommit setlocal spell textwidth=72
+autocmd Filetype gitcommit setlocal expandtab shiftwidth=4
 
 " http://unix.stackexchange.com/a/30757
 set tabpagemax=100
