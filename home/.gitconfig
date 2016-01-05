@@ -29,3 +29,5 @@
 	decorate = short
 [hub]
 	protocol = https
+[stash]
+	showPatch = true
