@@ -1,6 +1,7 @@
 tap 'caskroom/cask'
 tap 'homebrew/bundle'
 tap 'homebrew/completions'
+cask 'xquartz'
 brew 'autoconf'
 brew 'xz'
 brew 'automake'
