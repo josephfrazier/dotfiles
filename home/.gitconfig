@@ -14,8 +14,8 @@
 	br = branch
 	root = !pwd
 	# http://oli.jp/2012/git-powerup/#diff
-	d = diff --color-words
-	s = show --color-words
+	d = diff --color-words --find-renames
+	s = show --color-words --find-renames
 	# http://stackoverflow.com/q/8136864
 	m = log --graph --full-history --all --color --decorate --oneline
 	cp = cherry-pick
