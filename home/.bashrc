@@ -36,8 +36,7 @@ source ~/.nvm/nvm.sh
 
 # npm tab-completion
 # https://docs.npmjs.com/cli/completion
-# TODO doesn't seem to work
-. <(npm completion)
+source ./.bash/bash_completion.d/npm
 
 # added by travis gem
 [ -f /Users/josephfrazier/.travis/travis.sh ] && source /Users/josephfrazier/.travis/travis.sh
