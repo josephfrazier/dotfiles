@@ -26,6 +26,12 @@ set cindent
 
 autocmd BufEnter * silent! lcd %:p:h " cd to current file
 
+" vim-better-whitespace seems not to be enabled by default,
+" so try turning it off and on again
+" https://stackoverflow.com/questions/6821033/vim-how-to-run-a-command-immediately-when-starting-vim/6821698#6821698
+autocmd VimEnter * ToggleWhitespace
+autocmd VimEnter * ToggleWhitespace
+
 " case-insensitive and extended searching
 nmap / /\c\v
 
