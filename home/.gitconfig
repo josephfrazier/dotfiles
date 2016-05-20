@@ -20,6 +20,8 @@
 	m = log --graph --full-history --all --color --decorate --oneline
 	cp = cherry-pick
 	sm = submodule
+	# https://stackoverflow.com/questions/3357280/print-commit-message-of-a-given-commit-in-git/3357357#3357357
+	msg = log --format=%B -n 1
 [push]
 	default = tracking
 	recurseSubmodules = check
