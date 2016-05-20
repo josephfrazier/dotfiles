@@ -14,6 +14,8 @@ alias vlc='open -a vlc'
 alias dockerquickstart="bash --login '/Applications/Docker/Docker Quickstart Terminal.app/Contents/Resources/Scripts/start.sh'"
 # https://ask.wireshark.org/questions/38570/1991-os-x-and-multiple-windows/38581
 alias wireshark="open -n /Applications/Wireshark.app"
+# https://onsip.slack.com/archives/D0993HJNR/p1461950515000002
+alias jitsi="/Applications/Jitsi.app/Contents/MacOS/Jitsi -m > /dev/null 2>&1 &"
 
 # http://www.reddit.com/r/commandline/comments/ocawp/git_status_check_in_bash_prompt/c3g6w6t
 source ~/.bash/vcs
