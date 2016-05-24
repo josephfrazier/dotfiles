@@ -72,3 +72,6 @@ autocmd Filetype gitcommit setlocal expandtab shiftwidth=4
 
 " http://unix.stackexchange.com/a/30757
 set tabpagemax=100
+
+" https://stackoverflow.com/questions/4760428/how-can-i-make-vims-j-and-gq-commands-use-one-space-after-a-period/4760477#4760477
+set nojoinspaces
