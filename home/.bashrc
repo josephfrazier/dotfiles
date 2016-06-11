@@ -16,6 +16,11 @@ alias dockerquickstart="bash --login '/Applications/Docker/Docker Quickstart Ter
 alias wireshark="open -n /Applications/Wireshark.app"
 # https://onsip.slack.com/archives/D0993HJNR/p1461950515000002
 alias jitsi="/Applications/Jitsi.app/Contents/MacOS/Jitsi -m > /dev/null 2>&1 &"
+alias csshx="i2cssh -b"
+
+function gitremoteurl () {
+  git remote -v | awk '{print $2}'
+}
 
 # http://www.reddit.com/r/commandline/comments/ocawp/git_status_check_in_bash_prompt/c3g6w6t
 source ~/.bash/vcs
