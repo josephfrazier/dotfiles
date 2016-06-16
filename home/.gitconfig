@@ -39,3 +39,5 @@
 	showPatch = true
 [diff]
 	compactionHeuristic = true
+[commit]
+	verbose = true
