@@ -11,7 +11,7 @@
 	co = checkout
 	st = status -sb
 	ci = commit
-	br = branch
+	br = "!f() { for k in `git branch|perl -pe s/^..//`;do echo `git show --pretty=format:\"%Cgreen%ci %Cblue%cr%Creset\" $k|head -n 1` $k;done|sort -r; }; f"
 	root = !pwd
 	# http://oli.jp/2012/git-powerup/#diff
 	d = diff --color-words --find-renames
