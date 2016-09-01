@@ -43,6 +43,7 @@ set ruler " show line/column in status bar
 
 au BufNewFile,BufRead *.inc set filetype=php
 au BufNewFile,BufRead *.md set filetype=markdown
+au BufNewFile,BufRead *.js.es6 set filetype=javascript
 " makeshift puppet highlighting
 au BufNewFile,BufRead *.pp set filetype=ruby
 au BufNewFile,BufRead *.erb set filetype=eruby
