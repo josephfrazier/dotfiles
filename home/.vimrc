@@ -21,8 +21,9 @@ set hlsearch " highlight search results
 
 " indentation
 set autoindent
-set smartindent
 set cindent
+set cinkeys-=0#
+set indentkeys-=0#
 
 autocmd BufEnter * silent! lcd %:p:h " cd to current file
 
