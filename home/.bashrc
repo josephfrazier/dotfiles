@@ -61,3 +61,5 @@ export WEB_EXT_FIREFOX_BINARY=/Applications/FirefoxDeveloperEdition.app/Contents
 source /usr/local/opt/chruby/share/chruby/chruby.sh
 # https://github.com/postmodern/chruby#auto-switching
 source /usr/local/opt/chruby/share/chruby/auto.sh
+
+source ~/.homesick/repos/homeshick/completions/homeshick-completion.bash
