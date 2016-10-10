@@ -63,3 +63,6 @@ source /usr/local/opt/chruby/share/chruby/chruby.sh
 source /usr/local/opt/chruby/share/chruby/auto.sh
 
 source ~/.homesick/repos/homeshick/completions/homeshick-completion.bash
+
+# from `brew install pyenv`
+if which pyenv > /dev/null; then eval "$(pyenv init -)"; fi
