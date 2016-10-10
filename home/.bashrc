@@ -66,3 +66,5 @@ source ~/.homesick/repos/homeshick/completions/homeshick-completion.bash
 
 # from `brew install pyenv`
 if which pyenv > /dev/null; then eval "$(pyenv init -)"; fi
+
+[ -f ~/.bash/private.bash ] && source ~/.bash/private.bash
