@@ -52,6 +52,10 @@ au BufNewFile,BufRead *.erb set filetype=eruby
 " Makefiles require hard tabs
 autocmd FileType make set noexpandtab
 
+" Enable rust.vim Syntastic checker
+" https://github.com/rust-lang/rust.vim/issues/118#issue-185772908
+autocmd FileType rust let g:syntastic_rust_checkers = ['rustc']
+
 " per-project .vimrc
 " see http://damien.lespiau.name/blog/2009/03/18/per-project-vimrc/comment-page-1/
 set exrc
