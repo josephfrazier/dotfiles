@@ -69,4 +69,18 @@ source ~/.homesick/repos/homeshick/completions/homeshick-completion.bash
 # from `brew install pyenv`
 if which pyenv > /dev/null; then eval "$(pyenv init -)"; fi
 
+# colorize man pages
+# https://news.ycombinator.com/item?id=12296402
+man() {
+	env \
+		LESS_TERMCAP_mb=$(printf "\x1b[38;2;255;200;200m") \
+		LESS_TERMCAP_md=$(printf "\x1b[38;2;255;100;200m") \
+		LESS_TERMCAP_me=$(printf "\x1b[0m") \
+		LESS_TERMCAP_so=$(printf "\x1b[38;2;60;90;90;48;2;40;40;40m") \
+		LESS_TERMCAP_se=$(printf "\x1b[0m") \
+		LESS_TERMCAP_us=$(printf "\x1b[38;2;150;100;200m") \
+		LESS_TERMCAP_ue=$(printf "\x1b[0m") \
+		man "$@"
+}
+
 [ -f ~/.bash/private.bash ] && source ~/.bash/private.bash
