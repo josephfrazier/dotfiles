@@ -22,6 +22,7 @@
 	sm = submodule
 	# https://stackoverflow.com/questions/3357280/print-commit-message-of-a-given-commit-in-git/3357357#3357357
 	msg = log --format=%B -n 1
+	vmd = "!f() { git msg $1 | vmd; }; f"
 	# https://github.com/so-fancy/diff-so-fancy/tree/353058f543b047282e47ad14a3ac94f92dc90b03#usage
 	dsf = "!f() { [ \"$GIT_PREFIX\" != \"\" ] && cd "$GIT_PREFIX"; git diff --color $@ | diff-so-fancy | less --tabs=4 -RFX; }; f"
 	sdf = dsf
