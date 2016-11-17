@@ -32,6 +32,8 @@ export PATH=$HOME/adt-bundle-mac-x86_64-20140321/sdk/tools:$PATH
 export PATH=$HOME/adt-bundle-mac-x86_64-20140321/sdk/platform-tools:$PATH
 # https://sites.google.com/a/chromium.org/dev/developers/how-tos/install-depot-tools
 export PATH=$HOME/workspace/depot_tools:$PATH
+# needed by `cargo install rustfmt`
+export PATH=$HOME/.cargo/bin:$PATH
 
 # https://hub.github.com/
 alias git=hub
