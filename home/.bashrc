@@ -7,8 +7,6 @@ alias grep='grep --colour=auto'
 alias sftp='rlwrap sftp'
 stty -ixon # allows ctrl-s to do the opposite of ctrl-r, that is, go forwards
 alias updatedb='sudo /usr/libexec/locate.updatedb'
-# http://raamdev.com/2008/howto-install-md5sum-sha1sum-on-mac-os-x/
-alias md5sum='md5 -r'
 alias less='less -R' # preserve colors
 alias vlc='open -a vlc'
 alias dockerquickstart="bash --login '/Applications/Docker/Docker Quickstart Terminal.app/Contents/Resources/Scripts/start.sh'"
