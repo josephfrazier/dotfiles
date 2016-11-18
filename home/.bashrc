@@ -66,6 +66,9 @@ source ~/.homesick/repos/homeshick/completions/homeshick-completion.bash
 
 # from `brew install pyenv`
 if which pyenv > /dev/null; then eval "$(pyenv init -)"; fi
+# Stop `brew doctor` from complaining about pyenv *-config scripts
+# https://github.com/yyuu/pyenv/issues/106#issuecomment-94921352
+alias brew="env PATH=${PATH//$(pyenv root)\/shims:/} brew"
 
 # colorize man pages
 # https://news.ycombinator.com/item?id=12296402
