@@ -56,6 +56,12 @@ autocmd FileType make set noexpandtab
 " https://github.com/rust-lang/rust.vim/issues/118#issue-185772908
 autocmd FileType rust let g:syntastic_rust_checkers = ['rustc']
 
+" Disable Syntastic everywhere but rust files
+let g:syntastic_mode_map = {
+		\ "mode": "passive",
+		\ "active_filetypes": ["rust"],
+		\ "passive_filetypes": [] }
+
 " per-project .vimrc
 " see http://damien.lespiau.name/blog/2009/03/18/per-project-vimrc/comment-page-1/
 set exrc
