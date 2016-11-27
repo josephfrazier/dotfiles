@@ -16,6 +16,12 @@ alias wireshark="open -n /Applications/Wireshark.app"
 alias jitsi="/Applications/Jitsi.app/Contents/MacOS/Jitsi -m > /dev/null 2>&1 &"
 alias csshx="i2cssh -b"
 
+function dotenv () {
+  set -o allexport
+  source .env
+  set +o allexport
+}
+
 function gitremoteurl () {
   git remote -v | awk '{print $2}'
 }
