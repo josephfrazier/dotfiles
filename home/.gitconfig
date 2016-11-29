@@ -41,5 +41,6 @@
 	showPatch = true
 [diff]
 	compactionHeuristic = true
+	indentHeuristic = true
 [commit]
 	verbose = true
