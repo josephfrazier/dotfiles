@@ -42,5 +42,6 @@
 [diff]
 	compactionHeuristic = true
 	indentHeuristic = true
+	submodule = diff
 [commit]
 	verbose = true
