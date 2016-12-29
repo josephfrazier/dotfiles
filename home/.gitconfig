@@ -36,6 +36,7 @@
 	smudge = git-media-smudge %f
 [log]
 	decorate = short
+	follow = true
 [hub]
 	protocol = https
 [stash]
