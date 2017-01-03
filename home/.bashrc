@@ -59,10 +59,6 @@ source "$HOME/.homesick/repos/homeshick/homeshick.sh"
 # from `brew install thefuck`
 eval "$(thefuck --alias)"
 
-# Use Firefox Developer Edition with `web-ext`
-# https://github.com/mozilla/web-ext/blob/a6c5004bbb1edb8628c9c0230c7560094c64417e/src/program.js#L143
-export WEB_EXT_FIREFOX_BINARY=/Applications/FirefoxDeveloperEdition.app/Contents/MacOS/firefox-bin
-
 # from `brew install chruby`
 source /usr/local/opt/chruby/share/chruby/chruby.sh
 # https://github.com/postmodern/chruby#auto-switching
