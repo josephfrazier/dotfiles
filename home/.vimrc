@@ -1,5 +1,19 @@
-" http://www.vim.org/scripts/script.php?script_id=2332
-call pathogen#infect() 
+" https://github.com/junegunn/vim-plug/wiki/faq/61895a373e6a888f585b51a5c53a0b11b970f812#automatic-installation
+if empty(glob('~/.vim/plugged'))
+  autocmd VimEnter * PlugInstall --sync | source $MYVIMRC
+endif
+" https://github.com/junegunn/vim-plug/tree/5fc9eab788608fb4adcb07a8d79354dcafefaa6a#usage
+call plug#begin('~/.vim/plugged')
+Plug 'https://github.com/editorconfig/editorconfig-vim'
+Plug 'https://github.com/bogado/file-line'
+Plug 'https://github.com/rust-lang/rust.vim'
+Plug 'https://github.com/leafgarland/typescript-vim'
+Plug 'https://github.com/vim-syntastic/syntastic'
+Plug 'https://github.com/ntpeters/vim-better-whitespace'
+Plug 'https://github.com/altercation/vim-colors-solarized'
+Plug 'https://github.com/tpope/vim-fugitive'
+Plug 'https://github.com/airblade/vim-gitgutter'
+call plug#end()
 
 " company settings
 set noswapfile
