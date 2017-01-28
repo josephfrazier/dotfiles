@@ -89,6 +89,9 @@ if which pyenv > /dev/null; then eval "$(pyenv init -)"; fi
 # https://github.com/yyuu/pyenv/issues/106#issuecomment-94921352
 alias brew="env PATH=${PATH//$(pyenv root)\/shims:/} brew"
 
+# https://github.com/clvv/fasd#install
+eval "$(fasd --init auto)"
+
 # colorize man pages
 # https://news.ycombinator.com/item?id=12296402
 man() {
