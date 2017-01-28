@@ -46,6 +46,17 @@ export PATH=$HOME/.cargo/bin:$PATH
 # https://hub.github.com/
 alias git=hub
 
+# Create a GitHub pull request to the `origin` remote.
+# Requires `hub`: https://github.com/github/hub
+function pullrequest () {
+  # Make sure we have a fork.
+  git remote | grep josephfrazier > /dev/null || hub fork
+  # Push the current branch up to the fork
+  git push --set-upstream josephfrazier $(git rev-parse --abbrev-ref HEAD)
+  # Open the pull request
+  hub pull-request
+}
+
 set -o vi
 
 export NVM_DIR="/Users/josephfrazier/.nvm"
