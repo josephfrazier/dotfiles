@@ -16,6 +16,10 @@ alias wireshark="open -n /Applications/Wireshark.app"
 alias jitsi="/Applications/Jitsi.app/Contents/MacOS/Jitsi -m > /dev/null 2>&1 &"
 alias csshx="i2cssh -b"
 
+function vimd () {
+  vim $(git diff --name-only ${1:-HEAD})
+}
+
 function dotenv () {
   set -o allexport
   source .env
