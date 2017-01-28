@@ -17,7 +17,9 @@ alias jitsi="/Applications/Jitsi.app/Contents/MacOS/Jitsi -m > /dev/null 2>&1 &"
 alias csshx="i2cssh -b"
 
 function vimd () {
+  cd $(git rev-parse --show-toplevel)
   vim $(git diff --name-only ${1:-HEAD} ${@:2})
+  cd -
 }
 
 function dotenv () {
