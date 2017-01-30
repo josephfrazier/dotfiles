@@ -36,10 +36,6 @@ function gitremoteurl () {
 source ~/.bash/vcs
 export PS1="${GREEN_BOLD}[\u@\h \w]${RESET} \$(git_output)\\$\n"
 
-export ANDROID_HOME=$HOME/adt-bundle-mac-x86_64-20140321/sdk
-export PATH=$HOME/adt-bundle-mac-x86_64-20140321/sdk:$PATH
-export PATH=$HOME/adt-bundle-mac-x86_64-20140321/sdk/tools:$PATH
-export PATH=$HOME/adt-bundle-mac-x86_64-20140321/sdk/platform-tools:$PATH
 # https://sites.google.com/a/chromium.org/dev/developers/how-tos/install-depot-tools
 export PATH=$HOME/workspace/depot_tools:$PATH
 # needed by `cargo install rustfmt`
