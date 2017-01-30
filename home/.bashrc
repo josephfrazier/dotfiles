@@ -57,8 +57,11 @@ function pullrequest () {
 
 set -o vi
 
-export NVM_DIR="/Users/josephfrazier/.nvm"
-source ~/.nvm/nvm.sh
+# nvm
+export NVM_DIR="$HOME/.nvm"
+[ -s "$NVM_DIR/nvm.sh" ] && source "$NVM_DIR/nvm.sh" --no-use # This loads nvm
+alias node='unalias node ; unalias npm ; nvm use default ; node $@'
+alias npm='unalias node ; unalias npm ; nvm use default ; npm $@'
 
 # npm tab-completion
 # https://docs.npmjs.com/cli/completion
