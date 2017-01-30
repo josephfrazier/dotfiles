@@ -70,7 +70,7 @@ source ~/.bash/bash_completion.d/npm
 source "$HOME/.homesick/repos/homeshick/homeshick.sh"
 
 # from `brew install thefuck`
-eval "$(thefuck --alias)"
+alias fuck='TF_CMD=$(TF_ALIAS=fuck PYTHONIOENCODING=utf-8 TF_SHELL_ALIASES=$(alias) thefuck $(fc -ln -1)) && eval $TF_CMD; history -s $TF_CMD'
 
 # from `brew install chruby`
 source /usr/local/opt/chruby/share/chruby/chruby.sh
