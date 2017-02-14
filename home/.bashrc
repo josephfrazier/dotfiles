@@ -15,6 +15,7 @@ alias wireshark="open -n /Applications/Wireshark.app"
 # https://onsip.slack.com/archives/D0993HJNR/p1461950515000002
 alias jitsi="/Applications/Jitsi.app/Contents/MacOS/Jitsi -m > /dev/null 2>&1 &"
 alias csshx="i2cssh -b"
+alias npmreinstall="rm -rf node_modules && npm install"
 
 function vimd () {
   cd $(git rev-parse --show-toplevel)
