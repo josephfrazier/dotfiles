@@ -23,6 +23,10 @@ function vimd () {
   cd -
 }
 
+function vimdh () {
+  vimd head^
+}
+
 function dotenv () {
   set -o allexport
   source .env
