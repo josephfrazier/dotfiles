@@ -16,6 +16,7 @@
 	# http://oli.jp/2012/git-powerup/#diff
 	d = diff --word-diff --find-renames
 	s = show --word-diff --find-renames
+	l = log --patch --word-diff
 	# http://stackoverflow.com/q/8136864
 	m = log --graph --full-history --all --color --decorate --oneline
 	cp = cherry-pick
