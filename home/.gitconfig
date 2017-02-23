@@ -48,3 +48,5 @@
 	submodule = diff
 [commit]
 	verbose = true
+[transfer]
+	fsckObjects = true
