@@ -29,6 +29,7 @@
 	sdf = dsf
 	fixup = commit --amend --no-edit
 	amend = commit --amend
+	squash = "!f() { ref=${1:-HEAD}; git commit --squash $ref --no-edit; GIT_SEQUENCE_EDITOR=true git rebase --interactive --autosquash $ref^; }; f"
 [push]
 	default = tracking
 	recurseSubmodules = check
