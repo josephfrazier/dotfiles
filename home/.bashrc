@@ -1,3 +1,4 @@
+export HISTCONTROL=ignoreboth
 alias ls='ls -Gph'
 alias chrome='open -a "Google Chrome"'
 alias google-chrome='open -a "Google Chrome"'
