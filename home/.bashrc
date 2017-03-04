@@ -29,6 +29,11 @@ function vimdh () {
   vimd head^
 }
 
+function vimag () {
+  local command="ag -l $@"
+  $command && vim "$($command)"
+}
+
 function dotenv () {
   set -o allexport
   source .env
