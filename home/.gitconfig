@@ -17,6 +17,7 @@
 	d = diff --color-words --find-renames
 	s = show --color-words --find-renames
 	l = log --patch --word-diff
+	dn = diff --word-diff --find-renames
 	# http://stackoverflow.com/q/8136864
 	m = log --graph --full-history --all --color --decorate --oneline
 	cp = cherry-pick
