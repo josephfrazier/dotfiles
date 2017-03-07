@@ -44,10 +44,6 @@ function gitremoteurl () {
   git remote -v | awk '{print $2}'
 }
 
-# http://www.reddit.com/r/commandline/comments/ocawp/git_status_check_in_bash_prompt/c3g6w6t
-source ~/.bash/vcs
-export PS1="${GREEN_BOLD}[\u@\h \w]${RESET} \$(git_output)\\$\n"
-
 # https://sites.google.com/a/chromium.org/dev/developers/how-tos/install-depot-tools
 export PATH=$HOME/workspace/depot_tools:$PATH
 # needed by `cargo install rustfmt`
@@ -117,5 +113,9 @@ man() {
 		LESS_TERMCAP_ue=$(printf "\x1b[0m") \
 		man "$@"
 }
+
+# http://www.reddit.com/r/commandline/comments/ocawp/git_status_check_in_bash_prompt/c3g6w6t
+source ~/.bash/vcs
+export PS1="${GREEN_BOLD}[\u@\h \w]${RESET} \$(git_output)\\$\n"
 
 [ -f ~/.bash/private.bash ] && source ~/.bash/private.bash
