@@ -16,7 +16,7 @@
 	# http://oli.jp/2012/git-powerup/#diff
 	d = diff --color-words --find-renames
 	s = show --color-words --find-renames
-	l = log --patch --word-diff
+	l = log --patch --color-words
 	dn = diff --word-diff --find-renames
 	# http://stackoverflow.com/q/8136864
 	m = log --graph --full-history --all --color --decorate --oneline
