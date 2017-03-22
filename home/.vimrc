@@ -15,6 +15,7 @@ Plug 'https://github.com/tpope/vim-fugitive'
 Plug 'https://github.com/airblade/vim-gitgutter'
 Plug 'https://github.com/pangloss/vim-javascript'
 Plug 'https://github.com/Raimondi/delimitMate'
+Plug 'https://github.com/moll/vim-node'
 call plug#end()
 
 " company settings
