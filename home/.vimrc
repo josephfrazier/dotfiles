@@ -16,6 +16,7 @@ Plug 'https://github.com/airblade/vim-gitgutter'
 Plug 'https://github.com/pangloss/vim-javascript'
 Plug 'https://github.com/Raimondi/delimitMate'
 Plug 'https://github.com/moll/vim-node'
+Plug 'https://github.com/Valloric/YouCompleteMe' " additional required steps here: https://github.com/Valloric/YouCompleteMe#installation
 call plug#end()
 
 " company settings
