@@ -14,6 +14,7 @@ Plug 'https://github.com/altercation/vim-colors-solarized'
 Plug 'https://github.com/tpope/vim-fugitive'
 Plug 'https://github.com/airblade/vim-gitgutter'
 Plug 'https://github.com/pangloss/vim-javascript'
+Plug 'https://github.com/Raimondi/delimitMate'
 call plug#end()
 
 " company settings
