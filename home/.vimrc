@@ -13,6 +13,7 @@ Plug 'https://github.com/ntpeters/vim-better-whitespace'
 Plug 'https://github.com/altercation/vim-colors-solarized'
 Plug 'https://github.com/tpope/vim-fugitive'
 Plug 'https://github.com/airblade/vim-gitgutter'
+Plug 'https://github.com/pangloss/vim-javascript'
 call plug#end()
 
 " company settings
