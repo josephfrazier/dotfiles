@@ -21,12 +21,12 @@ alias pbedit="pbpaste | vipe | pbcopy"
 
 function light () {
   echo -e "\033]50;SetProfile=light\a"
-  sed --in-place 's/set background=dark/set background=light/' ~/.vimrc
+  sed --in-place --follow-symlinks 's/set background=dark/set background=light/' ~/.vimrc
 }
 
 function dark () {
   echo -e "\033]50;SetProfile=dark\a"
-  sed --in-place 's/set background=light/set background=dark/' ~/.vimrc
+  sed --in-place --follow-symlinks 's/set background=light/set background=dark/' ~/.vimrc
 }
 
 function vimd () {
