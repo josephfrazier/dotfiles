@@ -19,6 +19,16 @@ alias csshx="i2cssh -b"
 alias npmreinstall="rm -rf node_modules && npm install"
 alias pbedit="pbpaste | vipe | pbcopy"
 
+function light () {
+  echo -e "\033]50;SetProfile=light\a"
+  sed --in-place 's/set background=dark/set background=light/' ~/.vimrc
+}
+
+function dark () {
+  echo -e "\033]50;SetProfile=dark\a"
+  sed --in-place 's/set background=light/set background=dark/' ~/.vimrc
+}
+
 function vimd () {
   cd $(git rev-parse --show-toplevel)
   vim $(git diff --diff-filter d --name-only ${1:-HEAD} ${@:2})

@@ -1034,7 +1034,7 @@
 			<key>Mouse Reporting</key>
 			<true/>
 			<key>Name</key>
-			<string>Default (Dark Background)</string>
+			<string>dark</string>
 			<key>Non Ascii Font</key>
 			<string>Monaco 11</string>
 			<key>Non-ASCII Anti Aliased</key>
@@ -1800,7 +1800,7 @@
 			<key>Mouse Reporting</key>
 			<true/>
 			<key>Name</key>
-			<string>Default (Light Background)</string>
+			<string>light</string>
 			<key>Non Ascii Font</key>
 			<string>Monaco 11</string>
 			<key>Non-ASCII Anti Aliased</key>
