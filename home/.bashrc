@@ -80,6 +80,8 @@ set -o vi
 export NVM_DIR="$HOME/.nvm"
 [ -s "$NVM_DIR/nvm.sh" ] && source "$NVM_DIR/nvm.sh" --no-use # This loads nvm
 
+export PATH="$PATH:`yarn global bin`" # https://yarnpkg.com/en/docs/install
+
 # npm tab-completion
 # https://docs.npmjs.com/cli/completion
 source ~/.bash/bash_completion.d/npm
