@@ -105,3 +105,6 @@ set tabpagemax=100
 
 " https://stackoverflow.com/questions/4760428/how-can-i-make-vims-j-and-gq-commands-use-one-space-after-a-period/4760477#4760477
 set nojoinspaces
+
+" Enable the mouse
+set mouse=a
