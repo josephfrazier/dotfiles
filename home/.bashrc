@@ -71,7 +71,7 @@ function pullrequest () {
   # Push the current branch up to the fork
   git push --set-upstream josephfrazier $(git rev-parse --abbrev-ref HEAD)
   # Open the pull request
-  hub pull-request
+  hub pull-request --browse
 }
 
 set -o vi
