@@ -92,7 +92,16 @@ source ~/.bash/bash_completion.d/npm
 source "$HOME/.homesick/repos/homeshick/homeshick.sh"
 
 # from `brew install thefuck`
-alias fuck='TF_CMD=$(TF_ALIAS=fuck PYTHONIOENCODING=utf-8 TF_SHELL_ALIASES=$(alias) thefuck $(fc -ln -1)) && eval $TF_CMD; history -s $TF_CMD'
+function fuck () {
+  TF_PREVIOUS=$(fc -ln -1);
+  TF_CMD=$(
+  TF_ALIAS=fuck
+  TF_SHELL_ALIASES=$(alias)
+  PYTHONIOENCODING=utf-8
+  thefuck $TF_PREVIOUS THEFUCK_ARGUMENT_PLACEHOLDER $@
+  ) && eval $TF_CMD;
+  history -s $TF_CMD;
+}
 
 # from `brew install chruby`
 source /usr/local/opt/chruby/share/chruby/chruby.sh
