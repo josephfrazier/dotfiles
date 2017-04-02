@@ -51,8 +51,6 @@
 	submodule = diff
 [commit]
 	verbose = true
-[transfer]
-	fsckObjects = true
 [rebase]
 	autosquash = true
 [pager]
