@@ -55,4 +55,5 @@
 	autosquash = true
 [pager]
 	log = less --pattern '^commit'
+	diff = less --pattern '^diff'
 	difftool = true
