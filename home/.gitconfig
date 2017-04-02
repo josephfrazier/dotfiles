@@ -56,4 +56,5 @@
 [rebase]
 	autosquash = true
 [pager]
+	log = less --pattern '^commit'
 	difftool = true
