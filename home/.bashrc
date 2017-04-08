@@ -142,3 +142,7 @@ source ~/.bash/vcs
 export PS1="${GREEN_BOLD}[\u@\h \w]${RESET} \$(git_output)\\$\n"
 
 [ -f ~/.bash/private.bash ] && source ~/.bash/private.bash
+
+# tabtab source for yarn package
+# uninstall by removing these lines or running `tabtab uninstall yarn`
+[ -f /Users/josephfrazier/.config/yarn/global/node_modules/tabtab/.completions/yarn.bash ] && . /Users/josephfrazier/.config/yarn/global/node_modules/tabtab/.completions/yarn.bash
