@@ -17,6 +17,8 @@ Plug 'https://github.com/pangloss/vim-javascript'
 Plug 'https://github.com/Raimondi/delimitMate'
 Plug 'https://github.com/moll/vim-node'
 Plug 'https://github.com/Valloric/YouCompleteMe' " additional required steps here: https://github.com/Valloric/YouCompleteMe#installation
+Plug 'https://github.com/tpope/vim-surround'
+Plug 'https://github.com/tpope/vim-repeat'
 call plug#end()
 
 " company settings
