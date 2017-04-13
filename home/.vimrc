@@ -84,8 +84,10 @@ let g:syntastic_mode_map = {
 
 " per-project .vimrc
 " see http://damien.lespiau.name/blog/2009/03/18/per-project-vimrc/comment-page-1/
-set exrc
-set secure
+" XXX commented out because it's not secure:
+" https://github.com/vim/vim/issues/1015
+" set exrc
+" set secure
 
 " http://amix.dk/blog/post/19548
 set undodir=~/.vim/undodir
