@@ -20,6 +20,7 @@ Plug 'https://github.com/Valloric/YouCompleteMe' " additional required steps her
 Plug 'https://github.com/tpope/vim-surround'
 Plug 'https://github.com/tpope/vim-repeat'
 Plug 'https://github.com/MarcWeber/vim-addon-local-vimrc'
+Plug 'https://github.com/sbdchd/neoformat'
 call plug#end()
 
 " company settings
