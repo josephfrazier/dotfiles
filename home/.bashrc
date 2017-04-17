@@ -37,7 +37,7 @@ function vimd () {
 }
 
 function vimdh () {
-  vimd head^
+  vimd head^ $@
 }
 
 function vimag () {
