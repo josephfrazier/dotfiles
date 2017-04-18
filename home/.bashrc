@@ -32,7 +32,7 @@ function dark () {
 
 function vimd () {
   cd $(git rev-parse --show-toplevel)
-  vim $(git diff --diff-filter d --name-only ${1:-HEAD} ${@:2})
+  vim $(git diff --diff-filter=d --name-only ${1:-HEAD} ${@:2})
   cd -
 }
 
