@@ -42,7 +42,7 @@ function vimdh () {
 
 function vimag () {
   local command="ag -l $@"
-  $command && vim +/$1 $($command)
+  $command && vim +/\\c\\v$1 $($command)
 }
 
 function dotenv () {
