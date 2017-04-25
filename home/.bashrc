@@ -67,7 +67,7 @@ alias git=hub
 # Requires `hub`: https://github.com/github/hub
 function pullrequest () {
   (
-    set --euo pipefail
+    set -euo pipefail
     # Make sure we have a fork.
     git remote | grep josephfrazier > /dev/null || hub fork
     # Push the current branch up to the fork
