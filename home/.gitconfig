@@ -32,6 +32,11 @@
 	fixup = commit --amend --no-edit
 	amend = commit --amend
 	squash = "!f() { ref=${1:-HEAD}; git commit --squash $ref --no-edit; GIT_SEQUENCE_EDITOR=true git rebase --interactive --autosquash $ref^; }; f"
+	# https://stackoverflow.com/questions/21652242/git-re-checkout-files-after-creating-smudge-filter/21653524#21653524
+	reattr = !sh -c "\"git stash save; \
+                     rm .git/index; \
+                     git checkout HEAD -- \\\"$(git rev-parse --show-toplevel)\\\"; \
+                     git stash pop\""
 [push]
 	default = tracking
 	recurseSubmodules = check
