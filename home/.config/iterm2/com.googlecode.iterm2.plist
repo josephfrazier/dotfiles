@@ -2987,6 +2987,8 @@
 	</dict>
 	<key>PrefsCustomFolder</key>
 	<string>/Users/josephfrazier/.homesick/repos/dotfiles/home/.config/iterm2</string>
+	<key>Print In Black And White</key>
+	<true/>
 	<key>PromptOnQuit</key>
 	<true/>
 	<key>QuitWhenAllWindowsClosed</key>
