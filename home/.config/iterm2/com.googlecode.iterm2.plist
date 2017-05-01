@@ -1246,7 +1246,7 @@
 					<array>
 						<dict>
 							<key>action</key>
-							<integer>2</integer>
+							<integer>3</integer>
 							<key>parameter</key>
 							<string>echo 'open $(git remote -v | ag origin | awk "{print \\$2}")/commit/\0'</string>
 							<key>title</key>
@@ -2050,7 +2050,7 @@
 					<array>
 						<dict>
 							<key>action</key>
-							<integer>2</integer>
+							<integer>3</integer>
 							<key>parameter</key>
 							<string>echo 'open $(git remote -v | ag origin | awk "{print \\$2}")/commit/\0'</string>
 							<key>title</key>
