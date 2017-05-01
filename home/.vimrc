@@ -21,6 +21,7 @@ Plug 'https://github.com/tpope/vim-surround'
 Plug 'https://github.com/tpope/vim-repeat'
 Plug 'https://github.com/MarcWeber/vim-addon-local-vimrc'
 Plug 'https://github.com/sbdchd/neoformat'
+Plug 'https://github.com/tpope/vim-rsi'
 call plug#end()
 
 " company settings
