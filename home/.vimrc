@@ -22,6 +22,7 @@ Plug 'https://github.com/tpope/vim-repeat'
 Plug 'https://github.com/MarcWeber/vim-addon-local-vimrc'
 Plug 'https://github.com/sbdchd/neoformat'
 Plug 'https://github.com/tpope/vim-rsi'
+Plug 'https://github.com/tpope/vim-commentary'
 call plug#end()
 
 " company settings
