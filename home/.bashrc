@@ -17,8 +17,11 @@ alias wireshark="open -n /Applications/Wireshark.app"
 alias jitsi="/Applications/Jitsi.app/Contents/MacOS/Jitsi -m > /dev/null 2>&1 &"
 alias csshx="i2cssh -b"
 alias npmreinstall="rm -rf node_modules && npm install"
-alias npmt="npm test"
 alias pbedit="pbpaste | vipe | pbcopy"
+
+function npmt () {
+  npm test $@
+}
 
 function light () {
   echo -e "\033]50;SetProfile=light\a"
