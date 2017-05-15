@@ -35,7 +35,7 @@ function dark () {
 
 function vimd () {
   cd $(git rev-parse --show-toplevel)
-  vim $(git diff --diff-filter=d --name-only ${1:-HEAD} ${@:2})
+  vim -c "let g:gitgutter_diff_base = '${1:-HEAD}'" $(git diff --diff-filter=d --name-only ${1:-HEAD} ${@:2})
   cd -
 }
 
