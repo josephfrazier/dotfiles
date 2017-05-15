@@ -81,10 +81,15 @@ autocmd FileType make set noexpandtab
 " https://github.com/rust-lang/rust.vim/issues/118#issue-185772908
 autocmd FileType rust let g:syntastic_rust_checkers = ['rustc']
 
-" Disable Syntastic everywhere but rust files
+" Enable eslint_d checker for javascript
+" Requires eslint_d to be installed globally: yarn global add eslint_d
+autocmd FileType javascript let g:syntastic_javascript_checkers = ['eslint']
+autocmd FileType javascript let g:syntastic_javascript_eslint_exec = 'eslint_d'
+
+" Disable Syntastic everywhere but rust/javascript files
 let g:syntastic_mode_map = {
 		\ "mode": "passive",
-		\ "active_filetypes": ["rust"],
+		\ "active_filetypes": ["rust", "javascript"],
 		\ "passive_filetypes": [] }
 
 " per-project .vimrc
