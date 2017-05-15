@@ -66,6 +66,7 @@ nmap j gj
 nmap k gk
 
 set ruler " show line/column in status bar
+set rulerformat=%l,%c%V\ %o "Add byte offset to status bar https://codeyarns.com/2010/11/28/vim-ruler-and-default-ruler-format/
 
 au BufNewFile,BufRead *.inc set filetype=php
 au BufNewFile,BufRead *.md set filetype=markdown
