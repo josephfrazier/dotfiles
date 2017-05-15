@@ -23,6 +23,7 @@ Plug 'https://github.com/MarcWeber/vim-addon-local-vimrc'
 Plug 'https://github.com/sbdchd/neoformat'
 Plug 'https://github.com/tpope/vim-rsi'
 Plug 'https://github.com/tpope/vim-commentary'
+Plug 'https://github.com/tpope/vim-unimpaired' " [n and ]n jump to prev/next merge conflict: https://github.com/tpope/vim-unimpaired/blob/9a8be3696bc50064b9d9d146041ec4264e36e341/plugin/unimpaired.vim#L103-L145
 call plug#end()
 
 " company settings
