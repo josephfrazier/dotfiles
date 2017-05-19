@@ -44,8 +44,8 @@ function vimdh () {
 }
 
 function vimag () {
-  local command="ag -l $@"
-  $command && vim "+/\\c\\v$1" $($command)
+  local files="$(ag -l "$@")"
+  vim "+/\\c\\v$1" $files
 }
 
 function dotenv () {
