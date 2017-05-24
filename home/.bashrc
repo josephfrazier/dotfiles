@@ -19,6 +19,11 @@ alias csshx="i2cssh -b"
 alias npmreinstall="rm -rf node_modules && npm install"
 alias pbedit="pbpaste | vipe | pbcopy"
 
+# Usage: pbpaste | bytes 71 167 # prints bytes from index 71 to 167 (exclusive)
+function bytes () {
+  dd 2>/dev/null bs=1 skip=$1 count=$(($2 - $1))
+}
+
 function npmt () {
   npm test $@
 }
