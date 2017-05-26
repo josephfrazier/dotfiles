@@ -1,0 +1,675 @@
+/usr/local/lib
+├─┬ babel-plugin-transform-xregexp@0.0.6 -> /Users/josephfrazier/workspace/babel-plugin-transform-xregexp
+│ ├── babel-cli@6.24.1 extraneous
+│ ├── babel-plugin-transform-runtime@6.23.0 extraneous
+│ ├── babel-preset-es2015@6.24.1 extraneous
+│ ├─┬ babel-runtime@6.23.0
+│ │ ├── core-js@2.4.1
+│ │ └── regenerator-runtime@0.10.5
+│ ├── clear@0.0.1 extraneous
+│ ├── diff@3.2.0 extraneous
+│ ├── node-pre-gyp@0.6.34 extraneous
+│ ├── standard@8.6.0 extraneous
+│ ├── watch@1.0.2 extraneous
+│ └── xregexp@3.2.0
+├─┬ fix-yarn-global-packages@1.0.1
+│ └─┬ shelljs@0.7.6
+│   ├─┬ glob@7.1.1
+│   │ ├── fs.realpath@1.0.0
+│   │ ├─┬ inflight@1.0.6
+│   │ │ └── wrappy@1.0.2
+│   │ ├── inherits@2.0.3
+│   │ ├─┬ minimatch@3.0.3
+│   │ │ └─┬ brace-expansion@1.1.6
+│   │ │   ├── balanced-match@0.4.2
+│   │ │   └── concat-map@0.0.1
+│   │ ├── once@1.4.0
+│   │ └── path-is-absolute@1.0.1
+│   ├── interpret@1.0.2
+│   └─┬ rechoir@0.6.2
+│     └─┬ resolve@1.3.2
+│       └── path-parse@1.0.5
+├─┬ npm@4.2.0
+│ ├── abbrev@1.0.9
+│ ├── ansi-regex@2.1.1
+│ ├── ansicolors@0.3.2
+│ ├── ansistyles@0.1.3
+│ ├── aproba@1.0.4
+│ ├── archy@1.0.0
+│ ├── asap@2.0.5
+│ ├── chownr@1.0.1
+│ ├── cmd-shim@2.0.2
+│ ├─┬ columnify@1.5.4
+│ │ └─┬ wcwidth@1.0.0
+│ │   └─┬ defaults@1.0.3
+│ │     └── clone@1.0.2
+│ ├─┬ config-chain@1.1.11
+│ │ └── proto-list@1.2.4
+│ ├── debuglog@1.0.1
+│ ├── dezalgo@1.0.3
+│ ├── editor@1.0.0
+│ ├── fs-vacuum@1.2.9
+│ ├── fs-write-stream-atomic@1.0.8
+│ ├── fstream@1.0.10
+│ ├─┬ fstream-npm@1.2.0
+│ │ └─┬ fstream-ignore@1.0.5
+│ │   └─┬ minimatch@3.0.3
+│ │     └─┬ brace-expansion@1.1.6
+│ │       ├── balanced-match@0.4.2
+│ │       └── concat-map@0.0.1
+│ ├─┬ glob@7.1.1
+│ │ ├── fs.realpath@1.0.0
+│ │ ├─┬ minimatch@3.0.3
+│ │ │ └─┬ brace-expansion@1.1.6
+│ │ │   ├── balanced-match@0.4.2
+│ │ │   └── concat-map@0.0.1
+│ │ └── path-is-absolute@1.0.1
+│ ├── graceful-fs@4.1.11
+│ ├── has-unicode@2.0.1
+│ ├── hosted-git-info@2.1.5
+│ ├── iferr@0.1.5
+│ ├── imurmurhash@0.1.4
+│ ├── inflight@1.0.6
+│ ├── inherits@2.0.3
+│ ├── ini@1.3.4
+│ ├─┬ init-package-json@1.9.4
+│ │ ├─┬ glob@6.0.4
+│ │ │ ├─┬ minimatch@3.0.3
+│ │ │ │ └─┬ brace-expansion@1.1.6
+│ │ │ │   ├── balanced-match@0.4.2
+│ │ │ │   └── concat-map@0.0.1
+│ │ │ └── path-is-absolute@1.0.0
+│ │ └── promzard@0.3.0
+│ ├─┬ JSONStream@1.3.0
+│ │ ├── jsonparse@1.2.0
+│ │ └── through@2.3.8
+│ ├── lockfile@1.0.3
+│ ├── lodash._baseindexof@3.1.0
+│ ├─┬ lodash._baseuniq@4.6.0
+│ │ ├── lodash._createset@4.0.3
+│ │ └── lodash._root@3.0.1
+│ ├── lodash._bindcallback@3.0.1
+│ ├── lodash._cacheindexof@3.0.2
+│ ├── lodash._createcache@3.1.2
+│ ├── lodash._getnative@3.9.1
+│ ├── lodash.clonedeep@4.5.0
+│ ├── lodash.restparam@3.6.1
+│ ├── lodash.union@4.6.0
+│ ├── lodash.uniq@4.5.0
+│ ├── lodash.without@4.4.0
+│ ├─┬ mississippi@1.3.0
+│ │ ├─┬ concat-stream@1.6.0
+│ │ │ └── typedarray@0.0.6
+│ │ ├─┬ duplexify@3.5.0
+│ │ │ ├─┬ end-of-stream@1.0.0
+│ │ │ │ └── once@1.3.3
+│ │ │ └── stream-shift@1.0.0
+│ │ ├─┬ end-of-stream@1.1.0
+│ │ │ └── once@1.3.3
+│ │ ├── flush-write-stream@1.0.2
+│ │ ├── from2@2.3.0
+│ │ ├─┬ parallel-transform@1.1.0
+│ │ │ └── cyclist@0.2.2
+│ │ ├── pump@1.0.2
+│ │ ├── pumpify@1.3.5
+│ │ ├─┬ stream-each@1.2.0
+│ │ │ └── stream-shift@1.0.0
+│ │ └─┬ through2@2.0.3
+│ │   └── xtend@4.0.1
+│ ├─┬ mkdirp@0.5.1
+│ │ └── minimist@0.0.8
+│ ├─┬ node-gyp@3.5.0
+│ │ ├─┬ minimatch@3.0.3
+│ │ │ └─┬ brace-expansion@1.1.6
+│ │ │   ├── balanced-match@0.4.2
+│ │ │   └── concat-map@0.0.1
+│ │ └── nopt@3.0.6
+│ ├─┬ nopt@4.0.1
+│ │ └─┬ osenv@0.1.4
+│ │   ├── os-homedir@1.0.2
+│ │   └── os-tmpdir@1.0.2
+│ ├── normalize-git-url@3.0.2
+│ ├─┬ normalize-package-data@2.3.5
+│ │ └─┬ is-builtin-module@1.0.0
+│ │   └── builtin-modules@1.1.1
+│ ├── npm-cache-filename@1.0.2
+│ ├── npm-install-checks@3.0.0
+│ ├── npm-package-arg@4.2.0
+│ ├─┬ npm-registry-client@7.4.5
+│ │ └─┬ concat-stream@1.5.2
+│ │   ├─┬ readable-stream@2.0.6
+│ │   │ ├── core-util-is@1.0.2
+│ │   │ ├── isarray@1.0.0
+│ │   │ ├── process-nextick-args@1.0.7
+│ │   │ ├── string_decoder@0.10.31
+│ │   │ └── util-deprecate@1.0.2
+│ │   └── typedarray@0.0.6
+│ ├── npm-user-validate@0.1.5
+│ ├─┬ npmlog@4.0.2
+│ │ ├─┬ are-we-there-yet@1.1.2
+│ │ │ └── delegates@1.0.0
+│ │ ├── console-control-strings@1.1.0
+│ │ ├─┬ gauge@2.7.2
+│ │ │ ├── object-assign@4.1.0
+│ │ │ ├── signal-exit@3.0.2
+│ │ │ ├─┬ string-width@1.0.2
+│ │ │ │ ├── code-point-at@1.1.0
+│ │ │ │ └─┬ is-fullwidth-code-point@1.0.0
+│ │ │ │   └── number-is-nan@1.0.1
+│ │ │ ├── supports-color@0.2.0
+│ │ │ └── wide-align@1.1.0
+│ │ └── set-blocking@2.0.0
+│ ├── once@1.4.0
+│ ├── opener@1.4.2
+│ ├─┬ osenv@0.1.4
+│ │ ├── os-homedir@1.0.2
+│ │ └── os-tmpdir@1.0.2
+│ ├── path-is-inside@1.0.2
+│ ├─┬ read@1.0.7
+│ │ └── mute-stream@0.0.5
+│ ├── read-cmd-shim@1.0.1
+│ ├─┬ read-installed@4.0.3
+│ │ └── util-extend@1.0.3
+│ ├─┬ read-package-json@2.0.4
+│ │ ├─┬ glob@6.0.4
+│ │ │ ├─┬ minimatch@3.0.3
+│ │ │ │ └─┬ brace-expansion@1.1.6
+│ │ │ │   ├── balanced-match@0.4.2
+│ │ │ │   └── concat-map@0.0.1
+│ │ │ └── path-is-absolute@1.0.0
+│ │ └─┬ json-parse-helpfulerror@1.0.3
+│ │   └── jju@1.3.0
+│ ├── read-package-tree@5.1.5
+│ ├─┬ readable-stream@2.2.2
+│ │ ├── buffer-shims@1.0.0
+│ │ ├── core-util-is@1.0.2
+│ │ ├── isarray@1.0.0
+│ │ ├── process-nextick-args@1.0.7
+│ │ ├── string_decoder@0.10.31
+│ │ └── util-deprecate@1.0.2
+│ ├── readdir-scoped-modules@1.0.2
+│ ├── realize-package-specifier@3.0.3
+│ ├─┬ request@2.79.0
+│ │ ├── aws-sign2@0.6.0
+│ │ ├── aws4@1.5.0
+│ │ ├── caseless@0.11.0
+│ │ ├─┬ combined-stream@1.0.5
+│ │ │ └── delayed-stream@1.0.0
+│ │ ├── extend@3.0.0
+│ │ ├── forever-agent@0.6.1
+│ │ ├─┬ form-data@2.1.2
+│ │ │ └── asynckit@0.4.0
+│ │ ├─┬ har-validator@2.0.6
+│ │ │ ├─┬ chalk@1.1.3
+│ │ │ │ ├── ansi-styles@2.2.1
+│ │ │ │ ├── escape-string-regexp@1.0.5
+│ │ │ │ ├── has-ansi@2.0.0
+│ │ │ │ └── supports-color@2.0.0
+│ │ │ ├─┬ commander@2.9.0
+│ │ │ │ └── graceful-readlink@1.0.1
+│ │ │ ├─┬ is-my-json-valid@2.15.0
+│ │ │ │ ├── generate-function@2.0.0
+│ │ │ │ ├─┬ generate-object-property@1.2.0
+│ │ │ │ │ └── is-property@1.0.2
+│ │ │ │ ├── jsonpointer@4.0.0
+│ │ │ │ └── xtend@4.0.1
+│ │ │ └─┬ pinkie-promise@2.0.1
+│ │ │   └── pinkie@2.0.4
+│ │ ├─┬ hawk@3.1.3
+│ │ │ ├── boom@2.10.1
+│ │ │ ├── cryptiles@2.0.5
+│ │ │ ├── hoek@2.16.3
+│ │ │ └── sntp@1.0.9
+│ │ ├─┬ http-signature@1.1.1
+│ │ │ ├── assert-plus@0.2.0
+│ │ │ ├─┬ jsprim@1.3.1
+│ │ │ │ ├── extsprintf@1.0.2
+│ │ │ │ ├── json-schema@0.2.3
+│ │ │ │ └── verror@1.3.6
+│ │ │ └─┬ sshpk@1.10.1
+│ │ │   ├── asn1@0.2.3
+│ │ │   ├── assert-plus@1.0.0
+│ │ │   ├── bcrypt-pbkdf@1.0.0
+│ │ │   ├── dashdash@1.14.1
+│ │ │   ├── ecc-jsbn@0.1.1
+│ │ │   ├── getpass@0.1.6
+│ │ │   ├── jodid25519@1.0.2
+│ │ │   ├── jsbn@0.1.0
+│ │ │   └── tweetnacl@0.14.3
+│ │ ├── is-typedarray@1.0.0
+│ │ ├── isstream@0.1.2
+│ │ ├── json-stringify-safe@5.0.1
+│ │ ├─┬ mime-types@2.1.13
+│ │ │ └── mime-db@1.25.0
+│ │ ├── oauth-sign@0.8.2
+│ │ ├── qs@6.3.0
+│ │ ├── stringstream@0.0.5
+│ │ ├─┬ tough-cookie@2.3.2
+│ │ │ └── punycode@1.4.1
+│ │ └── tunnel-agent@0.4.3
+│ ├── retry@0.10.1
+│ ├── rimraf@2.5.4
+│ ├── semver@5.3.0
+│ ├── sha@2.0.1
+│ ├── slide@1.1.6
+│ ├── sorted-object@2.0.1
+│ ├─┬ sorted-union-stream@2.1.3
+│ │ ├─┬ from2@1.3.0
+│ │ │ └─┬ readable-stream@1.1.14
+│ │ │   ├── core-util-is@1.0.2
+│ │ │   ├── isarray@0.0.1
+│ │ │   └── string_decoder@0.10.31
+│ │ └── stream-iterate@1.1.1
+│ ├── strip-ansi@3.0.1
+│ ├─┬ tar@2.2.1
+│ │ └── block-stream@0.0.8
+│ ├── text-table@0.2.0
+│ ├── uid-number@0.0.6
+│ ├── umask@1.1.0
+│ ├─┬ unique-filename@1.1.0
+│ │ └── unique-slug@2.0.0
+│ ├── unpipe@1.0.0
+│ ├── uuid@3.0.1
+│ ├─┬ validate-npm-package-license@3.0.1
+│ │ ├─┬ spdx-correct@1.0.2
+│ │ │ └── spdx-license-ids@1.2.0
+│ │ └─┬ spdx-expression-parse@1.0.2
+│ │   ├── spdx-exceptions@1.0.4
+│ │   └── spdx-license-ids@1.2.0
+│ ├─┬ validate-npm-package-name@2.2.2
+│ │ └── builtins@0.0.7
+│ ├─┬ which@1.2.12
+│ │ └── isexe@1.1.2
+│ ├── wrappy@1.0.2
+│ └── write-file-atomic@1.3.1
+├─┬ prepack@0.2.0
+│ ├─┬ babel-core@6.24.1
+│ │ ├─┬ babel-code-frame@6.22.0
+│ │ │ ├─┬ chalk@1.1.3
+│ │ │ │ ├── ansi-styles@2.2.1
+│ │ │ │ ├── escape-string-regexp@1.0.5
+│ │ │ │ ├─┬ has-ansi@2.0.0
+│ │ │ │ │ └── ansi-regex@2.1.1
+│ │ │ │ ├── strip-ansi@3.0.1
+│ │ │ │ └── supports-color@2.0.0
+│ │ │ └── js-tokens@3.0.1
+│ │ ├── babel-helpers@6.24.1
+│ │ ├── babel-messages@6.23.0
+│ │ ├─┬ babel-register@6.24.1
+│ │ │ ├── core-js@2.4.1
+│ │ │ ├─┬ home-or-tmp@2.0.0
+│ │ │ │ ├── os-homedir@1.0.2
+│ │ │ │ └── os-tmpdir@1.0.2
+│ │ │ ├─┬ mkdirp@0.5.1
+│ │ │ │ └── minimist@0.0.8
+│ │ │ └── source-map-support@0.4.15
+│ │ ├─┬ babel-runtime@6.23.0
+│ │ │ └── regenerator-runtime@0.10.5
+│ │ ├── convert-source-map@1.5.0
+│ │ ├─┬ debug@2.6.6
+│ │ │ └── ms@0.7.3
+│ │ ├── json5@0.5.1
+│ │ ├── lodash@4.17.4
+│ │ ├─┬ minimatch@3.0.3
+│ │ │ └─┬ brace-expansion@1.1.7
+│ │ │   ├── balanced-match@0.4.2
+│ │ │   └── concat-map@0.0.1
+│ │ ├── path-is-absolute@1.0.1
+│ │ ├── private@0.1.7
+│ │ └── slash@1.0.0
+│ ├─┬ babel-generator@6.24.1
+│ │ ├─┬ detect-indent@4.0.0
+│ │ │ └─┬ repeating@2.0.1
+│ │ │   └─┬ is-finite@1.0.2
+│ │ │     └── number-is-nan@1.0.1
+│ │ ├── jsesc@1.3.0
+│ │ └── trim-right@1.0.1
+│ ├── babel-template@6.24.1
+│ ├─┬ babel-traverse@6.24.1
+│ │ ├── globals@9.17.0
+│ │ └─┬ invariant@2.2.2
+│ │   └── loose-envify@1.3.1
+│ ├─┬ babel-types@6.24.1
+│ │ ├── esutils@2.0.2
+│ │ └── to-fast-properties@1.0.3
+│ ├── babylon@6.17.0
+│ ├── base62@1.1.2
+│ ├── seedrandom@2.4.3
+│ └── source-map@0.5.6
+├─┬ regenerator-preset@0.9.6 -> /Users/josephfrazier/workspace/regenerator/packages/regenerator-preset
+│ ├── babel-plugin-syntax-async-functions@6.13.0
+│ ├── babel-plugin-syntax-async-generators@6.13.0
+│ ├─┬ babel-plugin-transform-es2015-arrow-functions@6.22.0
+│ │ └─┬ babel-runtime@6.23.0
+│ │   ├── core-js@2.4.1
+│ │   └── regenerator-runtime@0.10.5
+│ ├─┬ babel-plugin-transform-es2015-block-scoping@6.24.1
+│ │ ├─┬ babel-template@6.24.1
+│ │ │ └── babylon@6.17.0
+│ │ ├─┬ babel-traverse@6.24.1
+│ │ │ ├─┬ babel-code-frame@6.22.0
+│ │ │ │ ├─┬ chalk@1.1.3
+│ │ │ │ │ ├── ansi-styles@2.2.1
+│ │ │ │ │ ├── escape-string-regexp@1.0.5
+│ │ │ │ │ ├─┬ has-ansi@2.0.0
+│ │ │ │ │ │ └── ansi-regex@2.1.1
+│ │ │ │ │ ├── strip-ansi@3.0.1
+│ │ │ │ │ └── supports-color@2.0.0
+│ │ │ │ └── js-tokens@3.0.1
+│ │ │ ├─┬ debug@2.6.6
+│ │ │ │ └── ms@0.7.3
+│ │ │ ├── globals@9.17.0
+│ │ │ └─┬ invariant@2.2.2
+│ │ │   └── loose-envify@1.3.1
+│ │ ├─┬ babel-types@6.24.1
+│ │ │ ├── esutils@2.0.2
+│ │ │ └── to-fast-properties@1.0.3
+│ │ └── lodash@4.17.4
+│ ├─┬ babel-plugin-transform-es2015-classes@6.24.1
+│ │ ├── babel-helper-define-map@6.24.1
+│ │ ├─┬ babel-helper-function-name@6.24.1
+│ │ │ └── babel-helper-get-function-arity@6.24.1
+│ │ ├── babel-helper-optimise-call-expression@6.24.1
+│ │ ├── babel-helper-replace-supers@6.24.1
+│ │ └── babel-messages@6.23.0
+│ ├── babel-plugin-transform-es2015-for-of@6.23.0
+│ ├── private@0.1.7 extraneous
+│ └─┬ regenerator-transform@0.9.11
+│   ├── ansi-regex@2.1.1
+│   ├── ansi-styles@2.2.1
+│   ├── anymatch@1.3.0 extraneous
+│   ├── arr-diff@2.0.0 extraneous
+│   ├── arr-flatten@1.0.3 extraneous
+│   ├── array-unique@0.2.1 extraneous
+│   ├── arrify@1.0.1 extraneous
+│   ├── async-each@1.0.1 extraneous
+│   ├── babel-cli@6.24.1 extraneous
+│   ├── babel-code-frame@6.22.0
+│   ├── babel-core@6.24.1
+│   ├── babel-generator@6.24.1
+│   ├── babel-helper-builder-binary-assignment-operator-visitor@6.24.1 extraneous
+│   ├── babel-helper-call-delegate@6.24.1 extraneous
+│   ├── babel-helper-define-map@6.24.1 extraneous
+│   ├── babel-helper-explode-assignable-expression@6.24.1 extraneous
+│   ├── babel-helper-function-name@6.24.1 extraneous
+│   ├── babel-helper-get-function-arity@6.24.1 extraneous
+│   ├── babel-helper-hoist-variables@6.24.1 extraneous
+│   ├── babel-helper-optimise-call-expression@6.24.1 extraneous
+│   ├── babel-helper-regex@6.24.1 extraneous
+│   ├── babel-helper-remap-async-to-generator@6.24.1 extraneous
+│   ├── babel-helper-replace-supers@6.24.1 extraneous
+│   ├── babel-helpers@6.24.1
+│   ├── babel-messages@6.23.0
+│   ├── babel-plugin-check-es2015-constants@6.22.0 extraneous
+│   ├── babel-plugin-syntax-async-functions@6.13.0 extraneous
+│   ├── babel-plugin-syntax-exponentiation-operator@6.13.0 extraneous
+│   ├── babel-plugin-syntax-trailing-function-commas@6.22.0 extraneous
+│   ├── babel-plugin-transform-async-to-generator@6.24.1 extraneous
+│   ├── babel-plugin-transform-es2015-arrow-functions@6.22.0 extraneous
+│   ├── babel-plugin-transform-es2015-block-scoped-functions@6.22.0 extraneous
+│   ├── babel-plugin-transform-es2015-block-scoping@6.24.1 extraneous
+│   ├── babel-plugin-transform-es2015-classes@6.24.1 extraneous
+│   ├── babel-plugin-transform-es2015-computed-properties@6.24.1 extraneous
+│   ├── babel-plugin-transform-es2015-destructuring@6.23.0 extraneous
+│   ├── babel-plugin-transform-es2015-duplicate-keys@6.24.1 extraneous
+│   ├── babel-plugin-transform-es2015-for-of@6.23.0 extraneous
+│   ├── babel-plugin-transform-es2015-function-name@6.24.1 extraneous
+│   ├── babel-plugin-transform-es2015-literals@6.22.0 extraneous
+│   ├── babel-plugin-transform-es2015-modules-amd@6.24.1 extraneous
+│   ├── babel-plugin-transform-es2015-modules-commonjs@6.24.1 extraneous
+│   ├── babel-plugin-transform-es2015-modules-systemjs@6.24.1 extraneous
+│   ├── babel-plugin-transform-es2015-modules-umd@6.24.1 extraneous
+│   ├── babel-plugin-transform-es2015-object-super@6.24.1 extraneous
+│   ├── babel-plugin-transform-es2015-parameters@6.24.1 extraneous
+│   ├── babel-plugin-transform-es2015-shorthand-properties@6.24.1 extraneous
+│   ├── babel-plugin-transform-es2015-spread@6.22.0 extraneous
+│   ├── babel-plugin-transform-es2015-sticky-regex@6.24.1 extraneous
+│   ├── babel-plugin-transform-es2015-template-literals@6.22.0 extraneous
+│   ├── babel-plugin-transform-es2015-typeof-symbol@6.23.0 extraneous
+│   ├── babel-plugin-transform-es2015-unicode-regex@6.24.1 extraneous
+│   ├── babel-plugin-transform-exponentiation-operator@6.24.1 extraneous
+│   ├── babel-plugin-transform-regenerator@6.24.1 extraneous
+│   ├── babel-plugin-transform-runtime@6.23.0 extraneous
+│   ├── babel-plugin-transform-strict-mode@6.24.1 extraneous
+│   ├── babel-polyfill@6.23.0 extraneous
+│   ├── babel-preset-env@1.4.0 extraneous
+│   ├── babel-register@6.24.1
+│   ├── babel-runtime@6.23.0
+│   ├── babel-template@6.24.1
+│   ├── babel-traverse@6.24.1
+│   ├── babel-types@6.24.1
+│   ├── babylon@6.17.0
+│   ├── balanced-match@0.4.2
+│   ├── binary-extensions@1.8.0 extraneous
+│   ├── brace-expansion@1.1.7
+│   ├── braces@1.8.5 extraneous
+│   ├── browserslist@1.7.7 extraneous
+│   ├── buffer-shims@1.0.0 extraneous
+│   ├── caniuse-db@1.0.30000665 extraneous
+│   ├── chalk@1.1.3
+│   ├── chokidar@1.6.1 extraneous
+│   ├── commander@2.9.0 extraneous
+│   ├── concat-map@0.0.1
+│   ├── convert-source-map@1.5.0
+│   ├── core-js@2.4.1
+│   ├── core-util-is@1.0.2 extraneous
+│   ├── debug@2.6.6
+│   ├── detect-indent@4.0.0
+│   ├── electron-to-chromium@1.3.9 extraneous
+│   ├── escape-string-regexp@1.0.5
+│   ├── esutils@2.0.2
+│   ├── expand-brackets@0.1.5 extraneous
+│   ├── expand-range@1.8.2 extraneous
+│   ├── extglob@0.3.2 extraneous
+│   ├── filename-regex@2.0.1 extraneous
+│   ├── fill-range@2.2.3 extraneous
+│   ├── for-in@1.0.2 extraneous
+│   ├── for-own@0.1.5 extraneous
+│   ├── fs-readdir-recursive@1.0.0 extraneous
+│   ├── fs.realpath@1.0.0 extraneous
+│   ├── fsevents@1.1.1 extraneous
+│   ├── glob@7.1.1 extraneous
+│   ├── glob-base@0.3.0 extraneous
+│   ├── glob-parent@2.0.0 extraneous
+│   ├── globals@9.17.0
+│   ├── graceful-fs@4.1.11 extraneous
+│   ├── graceful-readlink@1.0.1 extraneous
+│   ├── has-ansi@2.0.0
+│   ├── home-or-tmp@2.0.0
+│   ├── inflight@1.0.6 extraneous
+│   ├── inherits@2.0.3 extraneous
+│   ├── invariant@2.2.2
+│   ├── is-binary-path@1.0.1 extraneous
+│   ├── is-buffer@1.1.5 extraneous
+│   ├── is-dotfile@1.0.2 extraneous
+│   ├── is-equal-shallow@0.1.3 extraneous
+│   ├── is-extendable@0.1.1 extraneous
+│   ├── is-extglob@1.0.0 extraneous
+│   ├── is-finite@1.0.2
+│   ├── is-glob@2.0.1 extraneous
+│   ├── is-number@2.1.0 extraneous
+│   ├── is-posix-bracket@0.1.1 extraneous
+│   ├── is-primitive@2.0.0 extraneous
+│   ├── isarray@1.0.0 extraneous
+│   ├── isobject@2.1.0 extraneous
+│   ├── js-tokens@3.0.1
+│   ├── jsesc@1.3.0
+│   ├── json5@0.5.1
+│   ├── kind-of@3.2.0 extraneous
+│   ├── lodash@4.17.4
+│   ├── loose-envify@1.3.1
+│   ├── micromatch@2.3.11 extraneous
+│   ├── minimatch@3.0.3
+│   ├── minimist@0.0.8
+│   ├── mkdirp@0.5.1
+│   ├── ms@0.7.3
+│   ├── nan@2.6.2 extraneous
+│   ├── normalize-path@2.1.1 extraneous
+│   ├── number-is-nan@1.0.1
+│   ├── object-assign@4.1.1 extraneous
+│   ├── object.omit@2.0.1 extraneous
+│   ├── once@1.4.0 extraneous
+│   ├── os-homedir@1.0.2
+│   ├── os-tmpdir@1.0.2
+│   ├── output-file-sync@1.1.2 extraneous
+│   ├── parse-glob@3.0.4 extraneous
+│   ├── path-is-absolute@1.0.1
+│   ├── preserve@0.2.0 extraneous
+│   ├── private@0.1.7
+│   ├── process-nextick-args@1.0.7 extraneous
+│   ├── randomatic@1.1.6 extraneous
+│   ├── readable-stream@2.2.9 extraneous
+│   ├── readdirp@2.1.0 extraneous
+│   ├── regenerate@1.3.2 extraneous
+│   ├── regenerator-runtime@0.10.5
+│   ├── regenerator-transform@0.9.11 extraneous
+│   ├── regex-cache@0.4.3 extraneous
+│   ├── regexpu-core@2.0.0 extraneous
+│   ├── regjsgen@0.2.0 extraneous
+│   ├── regjsparser@0.1.5 extraneous
+│   ├── remove-trailing-separator@1.0.1 extraneous
+│   ├── repeat-element@1.1.2 extraneous
+│   ├── repeat-string@1.6.1 extraneous
+│   ├── repeating@2.0.1
+│   ├── set-immediate-shim@1.0.1 extraneous
+│   ├── slash@1.0.0
+│   ├── source-map@0.5.6
+│   ├── source-map-support@0.4.15
+│   ├── string_decoder@1.0.0 extraneous
+│   ├── strip-ansi@3.0.1
+│   ├── supports-color@2.0.0
+│   ├── to-fast-properties@1.0.3
+│   ├── trim-right@1.0.1
+│   ├── user-home@1.1.1 extraneous
+│   ├── util-deprecate@1.0.2 extraneous
+│   ├── v8flags@2.1.1 extraneous
+│   └── wrappy@1.0.2 extraneous
+└── regenerator-runtime@0.10.5 -> /Users/josephfrazier/workspace/regenerator/packages/regenerator-runtime
+
+npm ERR! extraneous: babel-cli@6.24.1 /usr/local/lib/node_modules/babel-plugin-transform-xregexp/node_modules/babel-cli
+npm ERR! extraneous: babel-plugin-transform-runtime@6.23.0 /usr/local/lib/node_modules/babel-plugin-transform-xregexp/node_modules/babel-plugin-transform-runtime
+npm ERR! extraneous: babel-preset-es2015@6.24.1 /usr/local/lib/node_modules/babel-plugin-transform-xregexp/node_modules/babel-preset-es2015
+npm ERR! extraneous: clear@0.0.1 /usr/local/lib/node_modules/babel-plugin-transform-xregexp/node_modules/clear
+npm ERR! extraneous: diff@3.2.0 /usr/local/lib/node_modules/babel-plugin-transform-xregexp/node_modules/diff
+npm ERR! extraneous: node-pre-gyp@0.6.34 /usr/local/lib/node_modules/babel-plugin-transform-xregexp/node_modules/node-pre-gyp
+npm ERR! extraneous: standard@8.6.0 /usr/local/lib/node_modules/babel-plugin-transform-xregexp/node_modules/standard
+npm ERR! extraneous: watch@1.0.2 /usr/local/lib/node_modules/babel-plugin-transform-xregexp/node_modules/watch
+npm ERR! extraneous: private@0.1.7 /usr/local/lib/node_modules/regenerator-preset/node_modules/private
+npm ERR! extraneous: anymatch@1.3.0 /usr/local/lib/node_modules/regenerator-transform/node_modules/anymatch
+npm ERR! extraneous: arr-diff@2.0.0 /usr/local/lib/node_modules/regenerator-transform/node_modules/arr-diff
+npm ERR! extraneous: arr-flatten@1.0.3 /usr/local/lib/node_modules/regenerator-transform/node_modules/arr-flatten
+npm ERR! extraneous: array-unique@0.2.1 /usr/local/lib/node_modules/regenerator-transform/node_modules/array-unique
+npm ERR! extraneous: arrify@1.0.1 /usr/local/lib/node_modules/regenerator-transform/node_modules/arrify
+npm ERR! extraneous: async-each@1.0.1 /usr/local/lib/node_modules/regenerator-transform/node_modules/async-each
+npm ERR! extraneous: babel-cli@6.24.1 /usr/local/lib/node_modules/regenerator-transform/node_modules/babel-cli
+npm ERR! extraneous: babel-helper-builder-binary-assignment-operator-visitor@6.24.1 /usr/local/lib/node_modules/regenerator-transform/node_modules/babel-helper-builder-binary-assignment-operator-visitor
+npm ERR! extraneous: babel-helper-call-delegate@6.24.1 /usr/local/lib/node_modules/regenerator-transform/node_modules/babel-helper-call-delegate
+npm ERR! extraneous: babel-helper-define-map@6.24.1 /usr/local/lib/node_modules/regenerator-transform/node_modules/babel-helper-define-map
+npm ERR! extraneous: babel-helper-explode-assignable-expression@6.24.1 /usr/local/lib/node_modules/regenerator-transform/node_modules/babel-helper-explode-assignable-expression
+npm ERR! extraneous: babel-helper-function-name@6.24.1 /usr/local/lib/node_modules/regenerator-transform/node_modules/babel-helper-function-name
+npm ERR! extraneous: babel-helper-get-function-arity@6.24.1 /usr/local/lib/node_modules/regenerator-transform/node_modules/babel-helper-get-function-arity
+npm ERR! extraneous: babel-helper-hoist-variables@6.24.1 /usr/local/lib/node_modules/regenerator-transform/node_modules/babel-helper-hoist-variables
+npm ERR! extraneous: babel-helper-optimise-call-expression@6.24.1 /usr/local/lib/node_modules/regenerator-transform/node_modules/babel-helper-optimise-call-expression
+npm ERR! extraneous: babel-helper-regex@6.24.1 /usr/local/lib/node_modules/regenerator-transform/node_modules/babel-helper-regex
+npm ERR! extraneous: babel-helper-remap-async-to-generator@6.24.1 /usr/local/lib/node_modules/regenerator-transform/node_modules/babel-helper-remap-async-to-generator
+npm ERR! extraneous: babel-helper-replace-supers@6.24.1 /usr/local/lib/node_modules/regenerator-transform/node_modules/babel-helper-replace-supers
+npm ERR! extraneous: babel-plugin-check-es2015-constants@6.22.0 /usr/local/lib/node_modules/regenerator-transform/node_modules/babel-plugin-check-es2015-constants
+npm ERR! extraneous: babel-plugin-syntax-async-functions@6.13.0 /usr/local/lib/node_modules/regenerator-transform/node_modules/babel-plugin-syntax-async-functions
+npm ERR! extraneous: babel-plugin-syntax-exponentiation-operator@6.13.0 /usr/local/lib/node_modules/regenerator-transform/node_modules/babel-plugin-syntax-exponentiation-operator
+npm ERR! extraneous: babel-plugin-syntax-trailing-function-commas@6.22.0 /usr/local/lib/node_modules/regenerator-transform/node_modules/babel-plugin-syntax-trailing-function-commas
+npm ERR! extraneous: babel-plugin-transform-async-to-generator@6.24.1 /usr/local/lib/node_modules/regenerator-transform/node_modules/babel-plugin-transform-async-to-generator
+npm ERR! extraneous: babel-plugin-transform-es2015-arrow-functions@6.22.0 /usr/local/lib/node_modules/regenerator-transform/node_modules/babel-plugin-transform-es2015-arrow-functions
+npm ERR! extraneous: babel-plugin-transform-es2015-block-scoped-functions@6.22.0 /usr/local/lib/node_modules/regenerator-transform/node_modules/babel-plugin-transform-es2015-block-scoped-functions
+npm ERR! extraneous: babel-plugin-transform-es2015-block-scoping@6.24.1 /usr/local/lib/node_modules/regenerator-transform/node_modules/babel-plugin-transform-es2015-block-scoping
+npm ERR! extraneous: babel-plugin-transform-es2015-classes@6.24.1 /usr/local/lib/node_modules/regenerator-transform/node_modules/babel-plugin-transform-es2015-classes
+npm ERR! extraneous: babel-plugin-transform-es2015-computed-properties@6.24.1 /usr/local/lib/node_modules/regenerator-transform/node_modules/babel-plugin-transform-es2015-computed-properties
+npm ERR! extraneous: babel-plugin-transform-es2015-destructuring@6.23.0 /usr/local/lib/node_modules/regenerator-transform/node_modules/babel-plugin-transform-es2015-destructuring
+npm ERR! extraneous: babel-plugin-transform-es2015-duplicate-keys@6.24.1 /usr/local/lib/node_modules/regenerator-transform/node_modules/babel-plugin-transform-es2015-duplicate-keys
+npm ERR! extraneous: babel-plugin-transform-es2015-for-of@6.23.0 /usr/local/lib/node_modules/regenerator-transform/node_modules/babel-plugin-transform-es2015-for-of
+npm ERR! extraneous: babel-plugin-transform-es2015-function-name@6.24.1 /usr/local/lib/node_modules/regenerator-transform/node_modules/babel-plugin-transform-es2015-function-name
+npm ERR! extraneous: babel-plugin-transform-es2015-literals@6.22.0 /usr/local/lib/node_modules/regenerator-transform/node_modules/babel-plugin-transform-es2015-literals
+npm ERR! extraneous: babel-plugin-transform-es2015-modules-amd@6.24.1 /usr/local/lib/node_modules/regenerator-transform/node_modules/babel-plugin-transform-es2015-modules-amd
+npm ERR! extraneous: babel-plugin-transform-es2015-modules-commonjs@6.24.1 /usr/local/lib/node_modules/regenerator-transform/node_modules/babel-plugin-transform-es2015-modules-commonjs
+npm ERR! extraneous: babel-plugin-transform-es2015-modules-systemjs@6.24.1 /usr/local/lib/node_modules/regenerator-transform/node_modules/babel-plugin-transform-es2015-modules-systemjs
+npm ERR! extraneous: babel-plugin-transform-es2015-modules-umd@6.24.1 /usr/local/lib/node_modules/regenerator-transform/node_modules/babel-plugin-transform-es2015-modules-umd
+npm ERR! extraneous: babel-plugin-transform-es2015-object-super@6.24.1 /usr/local/lib/node_modules/regenerator-transform/node_modules/babel-plugin-transform-es2015-object-super
+npm ERR! extraneous: babel-plugin-transform-es2015-parameters@6.24.1 /usr/local/lib/node_modules/regenerator-transform/node_modules/babel-plugin-transform-es2015-parameters
+npm ERR! extraneous: babel-plugin-transform-es2015-shorthand-properties@6.24.1 /usr/local/lib/node_modules/regenerator-transform/node_modules/babel-plugin-transform-es2015-shorthand-properties
+npm ERR! extraneous: babel-plugin-transform-es2015-spread@6.22.0 /usr/local/lib/node_modules/regenerator-transform/node_modules/babel-plugin-transform-es2015-spread
+npm ERR! extraneous: babel-plugin-transform-es2015-sticky-regex@6.24.1 /usr/local/lib/node_modules/regenerator-transform/node_modules/babel-plugin-transform-es2015-sticky-regex
+npm ERR! extraneous: babel-plugin-transform-es2015-template-literals@6.22.0 /usr/local/lib/node_modules/regenerator-transform/node_modules/babel-plugin-transform-es2015-template-literals
+npm ERR! extraneous: babel-plugin-transform-es2015-typeof-symbol@6.23.0 /usr/local/lib/node_modules/regenerator-transform/node_modules/babel-plugin-transform-es2015-typeof-symbol
+npm ERR! extraneous: babel-plugin-transform-es2015-unicode-regex@6.24.1 /usr/local/lib/node_modules/regenerator-transform/node_modules/babel-plugin-transform-es2015-unicode-regex
+npm ERR! extraneous: babel-plugin-transform-exponentiation-operator@6.24.1 /usr/local/lib/node_modules/regenerator-transform/node_modules/babel-plugin-transform-exponentiation-operator
+npm ERR! extraneous: babel-plugin-transform-regenerator@6.24.1 /usr/local/lib/node_modules/regenerator-transform/node_modules/babel-plugin-transform-regenerator
+npm ERR! extraneous: babel-plugin-transform-runtime@6.23.0 /usr/local/lib/node_modules/regenerator-transform/node_modules/babel-plugin-transform-runtime
+npm ERR! extraneous: babel-plugin-transform-strict-mode@6.24.1 /usr/local/lib/node_modules/regenerator-transform/node_modules/babel-plugin-transform-strict-mode
+npm ERR! extraneous: babel-polyfill@6.23.0 /usr/local/lib/node_modules/regenerator-transform/node_modules/babel-polyfill
+npm ERR! extraneous: babel-preset-env@1.4.0 /usr/local/lib/node_modules/regenerator-transform/node_modules/babel-preset-env
+npm ERR! extraneous: binary-extensions@1.8.0 /usr/local/lib/node_modules/regenerator-transform/node_modules/binary-extensions
+npm ERR! extraneous: braces@1.8.5 /usr/local/lib/node_modules/regenerator-transform/node_modules/braces
+npm ERR! extraneous: browserslist@1.7.7 /usr/local/lib/node_modules/regenerator-transform/node_modules/browserslist
+npm ERR! extraneous: buffer-shims@1.0.0 /usr/local/lib/node_modules/regenerator-transform/node_modules/buffer-shims
+npm ERR! extraneous: caniuse-db@1.0.30000665 /usr/local/lib/node_modules/regenerator-transform/node_modules/caniuse-db
+npm ERR! extraneous: chokidar@1.6.1 /usr/local/lib/node_modules/regenerator-transform/node_modules/chokidar
+npm ERR! extraneous: commander@2.9.0 /usr/local/lib/node_modules/regenerator-transform/node_modules/commander
+npm ERR! extraneous: core-util-is@1.0.2 /usr/local/lib/node_modules/regenerator-transform/node_modules/core-util-is
+npm ERR! extraneous: electron-to-chromium@1.3.9 /usr/local/lib/node_modules/regenerator-transform/node_modules/electron-to-chromium
+npm ERR! extraneous: expand-brackets@0.1.5 /usr/local/lib/node_modules/regenerator-transform/node_modules/expand-brackets
+npm ERR! extraneous: expand-range@1.8.2 /usr/local/lib/node_modules/regenerator-transform/node_modules/expand-range
+npm ERR! extraneous: extglob@0.3.2 /usr/local/lib/node_modules/regenerator-transform/node_modules/extglob
+npm ERR! extraneous: filename-regex@2.0.1 /usr/local/lib/node_modules/regenerator-transform/node_modules/filename-regex
+npm ERR! extraneous: fill-range@2.2.3 /usr/local/lib/node_modules/regenerator-transform/node_modules/fill-range
+npm ERR! extraneous: for-in@1.0.2 /usr/local/lib/node_modules/regenerator-transform/node_modules/for-in
+npm ERR! extraneous: for-own@0.1.5 /usr/local/lib/node_modules/regenerator-transform/node_modules/for-own
+npm ERR! extraneous: fs-readdir-recursive@1.0.0 /usr/local/lib/node_modules/regenerator-transform/node_modules/fs-readdir-recursive
+npm ERR! extraneous: fs.realpath@1.0.0 /usr/local/lib/node_modules/regenerator-transform/node_modules/fs.realpath
+npm ERR! extraneous: fsevents@1.1.1 /usr/local/lib/node_modules/regenerator-transform/node_modules/fsevents
+npm ERR! extraneous: glob@7.1.1 /usr/local/lib/node_modules/regenerator-transform/node_modules/glob
+npm ERR! extraneous: glob-base@0.3.0 /usr/local/lib/node_modules/regenerator-transform/node_modules/glob-base
+npm ERR! extraneous: glob-parent@2.0.0 /usr/local/lib/node_modules/regenerator-transform/node_modules/glob-parent
+npm ERR! extraneous: graceful-fs@4.1.11 /usr/local/lib/node_modules/regenerator-transform/node_modules/graceful-fs
+npm ERR! extraneous: graceful-readlink@1.0.1 /usr/local/lib/node_modules/regenerator-transform/node_modules/graceful-readlink
+npm ERR! extraneous: inflight@1.0.6 /usr/local/lib/node_modules/regenerator-transform/node_modules/inflight
+npm ERR! extraneous: inherits@2.0.3 /usr/local/lib/node_modules/regenerator-transform/node_modules/inherits
+npm ERR! extraneous: is-binary-path@1.0.1 /usr/local/lib/node_modules/regenerator-transform/node_modules/is-binary-path
+npm ERR! extraneous: is-buffer@1.1.5 /usr/local/lib/node_modules/regenerator-transform/node_modules/is-buffer
+npm ERR! extraneous: is-dotfile@1.0.2 /usr/local/lib/node_modules/regenerator-transform/node_modules/is-dotfile
+npm ERR! extraneous: is-equal-shallow@0.1.3 /usr/local/lib/node_modules/regenerator-transform/node_modules/is-equal-shallow
+npm ERR! extraneous: is-extendable@0.1.1 /usr/local/lib/node_modules/regenerator-transform/node_modules/is-extendable
+npm ERR! extraneous: is-extglob@1.0.0 /usr/local/lib/node_modules/regenerator-transform/node_modules/is-extglob
+npm ERR! extraneous: is-glob@2.0.1 /usr/local/lib/node_modules/regenerator-transform/node_modules/is-glob
+npm ERR! extraneous: is-number@2.1.0 /usr/local/lib/node_modules/regenerator-transform/node_modules/is-number
+npm ERR! extraneous: is-posix-bracket@0.1.1 /usr/local/lib/node_modules/regenerator-transform/node_modules/is-posix-bracket
+npm ERR! extraneous: is-primitive@2.0.0 /usr/local/lib/node_modules/regenerator-transform/node_modules/is-primitive
+npm ERR! extraneous: isarray@1.0.0 /usr/local/lib/node_modules/regenerator-transform/node_modules/isarray
+npm ERR! extraneous: isobject@2.1.0 /usr/local/lib/node_modules/regenerator-transform/node_modules/isobject
+npm ERR! extraneous: kind-of@3.2.0 /usr/local/lib/node_modules/regenerator-transform/node_modules/kind-of
+npm ERR! extraneous: micromatch@2.3.11 /usr/local/lib/node_modules/regenerator-transform/node_modules/micromatch
+npm ERR! extraneous: nan@2.6.2 /usr/local/lib/node_modules/regenerator-transform/node_modules/nan
+npm ERR! extraneous: normalize-path@2.1.1 /usr/local/lib/node_modules/regenerator-transform/node_modules/normalize-path
+npm ERR! extraneous: object-assign@4.1.1 /usr/local/lib/node_modules/regenerator-transform/node_modules/object-assign
+npm ERR! extraneous: object.omit@2.0.1 /usr/local/lib/node_modules/regenerator-transform/node_modules/object.omit
+npm ERR! extraneous: once@1.4.0 /usr/local/lib/node_modules/regenerator-transform/node_modules/once
+npm ERR! extraneous: output-file-sync@1.1.2 /usr/local/lib/node_modules/regenerator-transform/node_modules/output-file-sync
+npm ERR! extraneous: parse-glob@3.0.4 /usr/local/lib/node_modules/regenerator-transform/node_modules/parse-glob
+npm ERR! extraneous: preserve@0.2.0 /usr/local/lib/node_modules/regenerator-transform/node_modules/preserve
+npm ERR! extraneous: process-nextick-args@1.0.7 /usr/local/lib/node_modules/regenerator-transform/node_modules/process-nextick-args
+npm ERR! extraneous: randomatic@1.1.6 /usr/local/lib/node_modules/regenerator-transform/node_modules/randomatic
+npm ERR! extraneous: readable-stream@2.2.9 /usr/local/lib/node_modules/regenerator-transform/node_modules/readable-stream
+npm ERR! extraneous: readdirp@2.1.0 /usr/local/lib/node_modules/regenerator-transform/node_modules/readdirp
+npm ERR! extraneous: regenerate@1.3.2 /usr/local/lib/node_modules/regenerator-transform/node_modules/regenerate
+npm ERR! extraneous: regenerator-transform@0.9.11 /usr/local/lib/node_modules/regenerator-transform/node_modules/regenerator-transform
+npm ERR! extraneous: regex-cache@0.4.3 /usr/local/lib/node_modules/regenerator-transform/node_modules/regex-cache
+npm ERR! extraneous: regexpu-core@2.0.0 /usr/local/lib/node_modules/regenerator-transform/node_modules/regexpu-core
+npm ERR! extraneous: regjsgen@0.2.0 /usr/local/lib/node_modules/regenerator-transform/node_modules/regjsgen
+npm ERR! extraneous: regjsparser@0.1.5 /usr/local/lib/node_modules/regenerator-transform/node_modules/regjsparser
+npm ERR! extraneous: remove-trailing-separator@1.0.1 /usr/local/lib/node_modules/regenerator-transform/node_modules/remove-trailing-separator
+npm ERR! extraneous: repeat-element@1.1.2 /usr/local/lib/node_modules/regenerator-transform/node_modules/repeat-element
+npm ERR! extraneous: repeat-string@1.6.1 /usr/local/lib/node_modules/regenerator-transform/node_modules/repeat-string
+npm ERR! extraneous: set-immediate-shim@1.0.1 /usr/local/lib/node_modules/regenerator-transform/node_modules/set-immediate-shim
+npm ERR! extraneous: string_decoder@1.0.0 /usr/local/lib/node_modules/regenerator-transform/node_modules/string_decoder
+npm ERR! extraneous: user-home@1.1.1 /usr/local/lib/node_modules/regenerator-transform/node_modules/user-home
+npm ERR! extraneous: util-deprecate@1.0.2 /usr/local/lib/node_modules/regenerator-transform/node_modules/util-deprecate
+npm ERR! extraneous: v8flags@2.1.1 /usr/local/lib/node_modules/regenerator-transform/node_modules/v8flags
+npm ERR! extraneous: wrappy@1.0.2 /usr/local/lib/node_modules/regenerator-transform/node_modules/wrappy
