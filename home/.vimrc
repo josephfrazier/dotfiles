@@ -1,5 +1,7 @@
 " https://github.com/junegunn/vim-plug/wiki/faq/61895a373e6a888f585b51a5c53a0b11b970f812#automatic-installation
-if empty(glob('~/.vim/plugged'))
+if empty(glob('~/.vim/autoload/plug.vim'))
+  silent !curl -fLo ~/.vim/autoload/plug.vim --create-dirs
+    \ https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim
   autocmd VimEnter * PlugInstall --sync | source $MYVIMRC
 endif
 " https://github.com/junegunn/vim-plug/tree/5fc9eab788608fb4adcb07a8d79354dcafefaa6a#usage
@@ -14,6 +16,7 @@ Plug 'https://github.com/altercation/vim-colors-solarized'
 Plug 'https://github.com/tpope/vim-fugitive'
 Plug 'https://github.com/airblade/vim-gitgutter'
 Plug 'https://github.com/pangloss/vim-javascript'
+Plug 'https://github.com/mxw/vim-jsx'
 Plug 'https://github.com/Raimondi/delimitMate'
 Plug 'https://github.com/moll/vim-node'
 Plug 'https://github.com/Valloric/YouCompleteMe' " additional required steps here: https://github.com/Valloric/YouCompleteMe#installation
@@ -24,7 +27,11 @@ Plug 'https://github.com/sbdchd/neoformat'
 Plug 'https://github.com/tpope/vim-rsi'
 Plug 'https://github.com/tpope/vim-commentary'
 Plug 'https://github.com/tpope/vim-unimpaired' " [n and ]n jump to prev/next merge conflict: https://github.com/tpope/vim-unimpaired/blob/9a8be3696bc50064b9d9d146041ec4264e36e341/plugin/unimpaired.vim#L103-L145
+Plug 'https://github.com/exu/pgsql.vim'
+Plug 'https://github.com/tpope/tpope-vim-abolish'
 call plug#end()
+
+let g:jsx_ext_required = 0
 
 " company settings
 set noswapfile
@@ -34,11 +41,12 @@ set expandtab
 
 " easier escape
 imap ;a <esc>
+vmap ;a <esc>
 
 " https://github.com/altercation/vim-colors-solarized#modify-vimrc
 syntax enable
 set background=dark
-colorscheme solarized
+" colorscheme solarized
 
 set hlsearch " highlight search results
 " higlight foreground is black
@@ -122,4 +130,6 @@ set tabpagemax=100
 set nojoinspaces
 
 " Enable the mouse
-set mouse=a
+" set mouse=a
+
+set autoindent
