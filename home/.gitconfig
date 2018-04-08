@@ -55,6 +55,7 @@
 	compactionHeuristic = true
 	indentHeuristic = true
 	submodule = diff
+	colorMoved = zebra
 [commit]
 	verbose = true
 [rebase]
