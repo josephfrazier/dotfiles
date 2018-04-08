@@ -29,6 +29,7 @@ Plug 'https://github.com/tpope/vim-commentary'
 Plug 'https://github.com/tpope/vim-unimpaired' " [n and ]n jump to prev/next merge conflict: https://github.com/tpope/vim-unimpaired/blob/9a8be3696bc50064b9d9d146041ec4264e36e341/plugin/unimpaired.vim#L103-L145
 Plug 'https://github.com/exu/pgsql.vim'
 Plug 'https://github.com/tpope/tpope-vim-abolish'
+Plug 'https://github.com/udalov/kotlin-vim'
 call plug#end()
 
 let g:jsx_ext_required = 0
