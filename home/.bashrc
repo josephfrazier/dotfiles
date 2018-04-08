@@ -191,3 +191,13 @@ function dotenv () {
 alias open=xdg-open
 
 source "$HOME/.homesick/repos/homeshick/homeshick.sh"
+
+# from `brew install golang`:
+#
+# A valid GOPATH is required to use the `go get` command.
+# If $GOPATH is not specified, $HOME/go will be used by default:
+#   https://golang.org/doc/code.html#GOPATH
+#
+# You may wish to add the GOROOT-based install location to your PATH:
+#   export PATH=$PATH:/home/josephfrazier/.linuxbrew/opt/go/libexec/bin
+export PATH=$PATH:$HOME/go/bin
