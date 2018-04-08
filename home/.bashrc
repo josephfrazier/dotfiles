@@ -154,6 +154,8 @@ alias pbpaste='xclip -selection clipboard -o'
 
 export PATH="$HOME/.yarn/bin:$PATH"
 
+export ANDROID_HOME=~/android-sdk
+
 set -o vi
 
 # Create a GitHub pull request to the `origin` remote.
