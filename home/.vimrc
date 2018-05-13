@@ -80,6 +80,7 @@ set rulerformat=%l,%c%V\ %o "Add byte offset to status bar https://codeyarns.com
 au BufNewFile,BufRead *.inc set filetype=php
 au BufNewFile,BufRead *.md set filetype=markdown
 au BufNewFile,BufRead *.js.es6 set filetype=javascript
+au BufNewFile,BufRead .env.* set syntax=sh
 " makeshift puppet highlighting
 au BufNewFile,BufRead *.pp set filetype=ruby
 au BufNewFile,BufRead *.erb set filetype=eruby
