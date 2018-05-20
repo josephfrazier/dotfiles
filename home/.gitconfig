@@ -15,8 +15,8 @@
 	br = "!f() { for k in `git branch|perl -pe s/^..//`;do echo `git show --pretty=format:\"%Cgreen%ci %Cblue%cr%Creset\" $k|head -n 1` $k;done|sort -r; }; f"
 	root = !pwd
 	# http://oli.jp/2012/git-powerup/#diff
-	d = diff --ignore-all-space --find-renames
-	s = show --ignore-all-space --find-renames
+	d = diff --ignore-all-space --find-renames --color-words=.
+	s = show --ignore-all-space --find-renames --color-words=.
 	l = log --patch --color-words
 	dn = diff --word-diff --find-renames
 	# http://stackoverflow.com/q/8136864
