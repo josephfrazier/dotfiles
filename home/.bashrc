@@ -151,6 +151,7 @@ eval $(thefuck --alias)
 
 alias pbcopy='xclip -selection clipboard'
 alias pbpaste='xclip -selection clipboard -o'
+alias pbedit='pbpaste | vipe | pbcopy'
 
 export PATH="$HOME/.yarn/bin:$PATH"
 
