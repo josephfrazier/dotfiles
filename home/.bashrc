@@ -144,7 +144,7 @@ export INFOPATH="/home/josephfrazier/.linuxbrew/share/info:$INFOPATH"
 export XDG_DATA_DIRS="/home/josephfrazier/.linuxbrew/share:$XDG_DATA_DIRS"
 
 export NVM_DIR="$HOME/.nvm"
-. "/home/josephfrazier/.linuxbrew/opt/nvm/nvm.sh"
+[ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
 [ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
 
 if [ -f ~/.git-completion.bash ]; then
