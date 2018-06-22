@@ -191,7 +191,7 @@ function dotenv () {
   set +o allexport
 }
 
-. /usr/share/autojump/autojump.sh
+[ -s "/usr/share/autojump/autojump.sh" ] && \. "/usr/share/autojump/autojump.sh"  # This loads autojump
 
 alias open=xdg-open
 
