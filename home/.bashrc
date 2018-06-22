@@ -147,6 +147,10 @@ export NVM_DIR="$HOME/.nvm"
 . "/home/josephfrazier/.linuxbrew/opt/nvm/nvm.sh"
 [ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
 
+if [ -f ~/.git-completion.bash ]; then
+  . ~/.git-completion.bash
+fi
+
 eval $(thefuck --alias)
 
 alias pbcopy='xclip -selection clipboard'
