@@ -172,10 +172,12 @@ function pullrequest () {
     git remote | grep josephfrazier > /dev/null || hub fork
     # Push the current branch up to the fork
     git push --set-upstream josephfrazier $(git rev-parse --abbrev-ref HEAD)
+    # Use concatenated commit messages as PR title/body
+    git log --format=%B master.. --reverse > .git/PULLREQ_EDITMSG
     # Live-preview the rendered pull request markdown
     vmd .git/PULLREQ_EDITMSG &
     # Open the pull request
-    hub pull-request --browse
+    hub pull-request --browse -b master
     # Close the markdown preview
     ps aux | grep '[v]md/main/main.js .git/PULLREQ_EDITMSG' | awk '{ print $2 }' | xargs kill -9
   )
