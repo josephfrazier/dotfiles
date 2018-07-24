@@ -48,7 +48,7 @@
 	decorate = short
 	follow = true
 [hub]
-	protocol = https
+	protocol = git
 [stash]
 	showPatch = true
 [diff]
