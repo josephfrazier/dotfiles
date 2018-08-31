@@ -79,6 +79,12 @@ nmap k gk
 set ruler " show line/column in status bar
 set rulerformat=%l,%c%V\ %o "Add byte offset to status bar https://codeyarns.com/2010/11/28/vim-ruler-and-default-ruler-format/
 
+" https://stackoverflow.com/questions/10488717/how-can-i-permanently-display-the-path-of-the-current-file-in-vim/10488747#10488747
+" always show status bar
+set laststatus=2
+" Add full file path to your existing statusline
+set statusline+=%F
+
 au BufNewFile,BufRead *.inc set filetype=php
 au BufNewFile,BufRead *.md set filetype=markdown
 au BufNewFile,BufRead *.js.es6 set filetype=javascript
