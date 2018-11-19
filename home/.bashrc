@@ -140,6 +140,11 @@ function vimag () {
   vim "+/\\c\\v$1" $files
 }
 
+function vimgrep () {
+  local files="$(git grep -il "$@")"
+  vim "+/\\c\\v$1" $files
+}
+
 export PATH="/home/josephfrazier/.linuxbrew/bin:$PATH"
 export PATH="/home/josephfrazier/.linuxbrew/sbin:$PATH"
 export MANPATH="/home/josephfrazier/.linuxbrew/share/man:$MANPATH"
