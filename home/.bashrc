@@ -216,3 +216,6 @@ source "$HOME/.homesick/repos/homeshick/homeshick.sh"
 # You may wish to add the GOROOT-based install location to your PATH:
 #   export PATH=$PATH:/home/josephfrazier/.linuxbrew/opt/go/libexec/bin
 export PATH=$PATH:$HOME/go/bin
+
+# heroku autocomplete setup
+HEROKU_AC_BASH_SETUP_PATH=/Users/josephfrazier/Library/Caches/heroku/autocomplete/bash_setup && test -f $HEROKU_AC_BASH_SETUP_PATH && source $HEROKU_AC_BASH_SETUP_PATH;
