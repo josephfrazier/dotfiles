@@ -32,6 +32,7 @@ Plug 'https://github.com/tpope/tpope-vim-abolish'
 Plug 'https://github.com/udalov/kotlin-vim'
 Plug 'https://github.com/keith/swift.vim'
 Plug 'https://github.com/tpope/vim-speeddating'
+Plug 'https://github.com/tpope/vim-rails'
 call plug#end()
 
 let g:jsx_ext_required = 0
