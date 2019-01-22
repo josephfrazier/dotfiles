@@ -165,6 +165,7 @@ alias pbcopy='xclip -selection clipboard'
 alias pbpaste='xclip -selection clipboard -o'
 alias pbedit='pbpaste | vipe | pbcopy'
 alias pbjq='pbpaste | jq'
+alias be='bundle exec'
 
 export PATH="$HOME/.yarn/bin:$PATH"
 
