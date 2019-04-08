@@ -140,6 +140,11 @@ function vimag () {
   vim "+/\\c\\v$1" $files
 }
 
+function vimdag () {
+  local files="$(git diff master... --name-only | xargs ag -l "$@")"
+  vim "+/\\c\\v$1" $files
+}
+
 function vimgrep () {
   local files="$(git grep -il "$@")"
   vim "+/\\c\\v$1" $files
