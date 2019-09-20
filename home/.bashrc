@@ -119,8 +119,14 @@ if ! shopt -oq posix; then
   fi
 fi
 
+# vim with multiple files in tabs:
+# `vim file1 file2 file3`
 alias vim='vim -p'
 
+# vim, but set the gitgutter diff to the argument commit and open all the changed files
+# For example, to open all the files changed by the last commit:
+# `vimd @`
+# You can also run without arguments to open the files that have been changed since the last commit (i.e. unstaged changes)
 function vimd () {
   cd $(git rev-parse --show-toplevel)
   vim -c "let g:gitgutter_diff_base = '${1:-HEAD}'" $(git diff --diff-filter=d --name-only ${1:-HEAD} ${@:2})
