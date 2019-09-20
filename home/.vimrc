@@ -58,6 +58,7 @@ set background=dark
 set hlsearch " highlight search results
 " higlight foreground is black
 " hi Search ctermfg=Black
+set incsearch " highlight search results while typing pattern
 
 " indentation
 set autoindent
