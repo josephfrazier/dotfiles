@@ -36,6 +36,7 @@ Plug 'https://github.com/vim-ruby/vim-ruby'
 Plug 'https://github.com/tpope/vim-rails'
 Plug '/usr/local/opt/fzf'
 Plug 'junegunn/fzf.vim'
+Plug 'https://github.com/slim-template/vim-slim'
 call plug#end()
 
 let g:jsx_ext_required = 0
@@ -52,6 +53,7 @@ vmap ;a <esc>
 
 " https://github.com/altercation/vim-colors-solarized#modify-vimrc
 syntax enable
+filetype plugin indent on
 set background=dark
 " colorscheme solarized
 
