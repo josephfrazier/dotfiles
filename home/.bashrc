@@ -177,6 +177,7 @@ alias pbpaste='xclip -selection clipboard -o'
 alias pbedit='pbpaste | vipe | pbcopy'
 alias pbjq='pbpaste | jq'
 alias be='bundle exec'
+alias cat=bat # https://github.com/sharkdp/bat
 
 export PATH="$HOME/.yarn/bin:$PATH"
 
