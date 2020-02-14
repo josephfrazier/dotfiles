@@ -172,8 +172,8 @@ fi
 
 eval $(thefuck --alias)
 
-alias pbcopy='xclip -selection clipboard'
-alias pbpaste='xclip -selection clipboard -o'
+# alias pbcopy='xclip -selection clipboard'
+# alias pbpaste='xclip -selection clipboard -o'
 alias pbedit='pbpaste | vipe | pbcopy'
 alias pbjq='pbpaste | jq'
 alias be='bundle exec'
@@ -217,7 +217,7 @@ function dotenv () {
 
 [ -s "/usr/share/autojump/autojump.sh" ] && \. "/usr/share/autojump/autojump.sh"  # This loads autojump
 
-alias open=xdg-open
+# alias open=xdg-open
 
 source "$HOME/.homesick/repos/homeshick/homeshick.sh"
 
