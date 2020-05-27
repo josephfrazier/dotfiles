@@ -199,7 +199,7 @@ function pullrequest () {
     # Live-preview the rendered pull request markdown
     vmd .git/PULLREQ_EDITMSG &
     # Open the pull request
-    hub pull-request --browse -b master $@
+    hub pull-request --browse -b master --draft $@
     # Close the markdown preview
     ps aux | grep '[v]md/main/main.js .git/PULLREQ_EDITMSG' | awk '{ print $2 }' | xargs kill -9
   )
