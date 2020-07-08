@@ -70,3 +70,5 @@
 	helper = osxkeychain
 [pull]
 	ff = only
+[checkout]
+  defaultRemote = origin
