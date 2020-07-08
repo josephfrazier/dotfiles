@@ -68,3 +68,5 @@
 	difftool = true
 [credential]
 	helper = osxkeychain
+[pull]
+	ff = only
