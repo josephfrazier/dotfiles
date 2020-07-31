@@ -4,7 +4,7 @@
 [core]
 	editor = vim
 	excludesfile = /Users/josephfrazier/.gitignore
-	pager = delta --dark --navigate
+	pager = delta --dark
 [color]
 	ui = auto
 [alias]
