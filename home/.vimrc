@@ -41,6 +41,8 @@ Plug 'https://github.com/slim-template/vim-slim'
 Plug 'https://github.com/APZelos/blamer.nvim'
 call plug#end()
 
+let g:blamer_enabled = 1
+
 let g:jsx_ext_required = 0
 
 " company settings
