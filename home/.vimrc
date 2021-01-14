@@ -37,6 +37,7 @@ Plug 'https://github.com/tpope/vim-rails'
 Plug '/usr/local/opt/fzf'
 Plug 'junegunn/fzf.vim'
 Plug 'https://github.com/slim-template/vim-slim'
+Plug 'https://github.com/APZelos/blamer.nvim'
 call plug#end()
 
 let g:jsx_ext_required = 0
