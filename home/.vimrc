@@ -19,7 +19,7 @@ Plug 'https://github.com/pangloss/vim-javascript'
 Plug 'https://github.com/mxw/vim-jsx'
 Plug 'https://github.com/Raimondi/delimitMate'
 Plug 'https://github.com/moll/vim-node'
-Plug 'https://github.com/Valloric/YouCompleteMe' " additional required steps here: https://github.com/Valloric/YouCompleteMe#installation
+" Plug 'https://github.com/Valloric/YouCompleteMe' " additional required steps here: https://github.com/Valloric/YouCompleteMe#installation
 Plug 'https://github.com/tpope/vim-surround'
 Plug 'https://github.com/tpope/vim-repeat'
 Plug 'https://github.com/MarcWeber/vim-addon-local-vimrc'
@@ -37,6 +37,7 @@ Plug 'https://github.com/tpope/vim-rails'
 Plug '/usr/local/opt/fzf'
 Plug 'junegunn/fzf.vim'
 Plug 'https://github.com/slim-template/vim-slim'
+" Plug 'neoclide/coc.nvim', {'branch': 'release'} " conqueror of completion"
 Plug 'https://github.com/APZelos/blamer.nvim'
 call plug#end()
 
