@@ -32,9 +32,11 @@ function git_output {
   HASH=$(parse_git_commit_hash)
   if [ -n "$BRANCH" ]; then
 
-    # Branch color - green for master, yellow for development, cyan for other
+    # Branch color - green for main/master, yellow for development, cyan for other
     BRANCH_COLOR=${WHITE_BOLD}
-    if [ "$BRANCH" = "master" ]; then 
+    if [ "$BRANCH" = "main" ]; then
+      BRANCH_COLOR=${BRANCH_COLOR}${RED_BOLD}
+    if [ "$BRANCH" = "master" ]; then
       BRANCH_COLOR=${BRANCH_COLOR}${RED_BOLD}
     elif [ "$BRANCH" = "development" ]; then
       BRANCH_COLOR=${BRANCH_COLOR}${YELLOW_BOLD}
