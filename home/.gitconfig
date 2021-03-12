@@ -37,8 +37,8 @@
                      rm .git/index; \
                      git checkout HEAD -- \\\"$(git rev-parse --show-toplevel)\\\"; \
                      git stash pop\""
-	merge-master = "!f() { git pull; git checkout master; git pull; git checkout -; git merge master; }; f"
-	mm=merge-master
+	merge-main = "!f() { git branch | grep ' main$' > /dev/null && default_branch=main || default_branch=master; git pull; git checkout $default_branch; git pull; git checkout -; git merge $default_branch; }; f"
+	mm=merge-main
 [push]
 	default = tracking
 	recurseSubmodules = check
