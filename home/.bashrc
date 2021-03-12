@@ -147,7 +147,8 @@ function vimag () {
 }
 
 function vimdag () {
-  local files="$(git diff master... --name-only | xargs ag -l "$@")"
+  git branch | grep ' main$' > /dev/null && default_branch=main || default_branch=master
+  local files="$(git diff $default_branch... --name-only | xargs ag -l "$@")"
   vim "+/\\c\\v$1" $files
 }
 
