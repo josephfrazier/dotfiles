@@ -191,6 +191,9 @@ set -o vi
 function pullrequest () {
   (
     set -euo pipefail
+
+    pushd $(git root)
+
     # Make sure we have a fork.
     git remote | grep josephfrazier > /dev/null || hub fork
     # Push the current branch up to the fork
@@ -205,6 +208,8 @@ function pullrequest () {
     hub pull-request --browse -b $default_branch --draft $@
     # Close the markdown preview
     ps aux | grep '[v]md/main/main.js .git/PULLREQ_EDITMSG' | awk '{ print $2 }' | xargs kill -9
+
+    popd
   )
 }
 
