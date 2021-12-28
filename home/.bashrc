@@ -143,7 +143,7 @@ function vimdu () {
 
 function vimdm () {
   git branch | grep ' main$' > /dev/null && default_branch=main || default_branch=master
-  vimd $default_branch...
+  vimd $default_branch... ${@:1}
 }
 
 function vimag () {
