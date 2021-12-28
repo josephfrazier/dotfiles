@@ -72,3 +72,5 @@
 	ff = only
 [checkout]
   defaultRemote = origin
+[difftool "diffpdf"]
+	cmd = diff-pdf --view \"$LOCAL\" \"$REMOTE\"
