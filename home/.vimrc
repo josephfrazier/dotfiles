@@ -58,7 +58,8 @@ vmap ;a <esc>
 " https://github.com/altercation/vim-colors-solarized#modify-vimrc
 syntax enable
 filetype plugin indent on
-set background=dark
+" set background=dark
+set background=light
 " colorscheme solarized
 
 set hlsearch " highlight search results
