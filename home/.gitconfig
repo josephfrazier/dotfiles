@@ -74,3 +74,5 @@
   defaultRemote = origin
 [difftool "diffpdf"]
 	cmd = diff-pdf --view \"$LOCAL\" \"$REMOTE\"
+[init]
+	defaultBranch = main
