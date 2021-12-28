@@ -76,3 +76,5 @@
 	cmd = diff-pdf --view \"$LOCAL\" \"$REMOTE\"
 [init]
 	defaultBranch = main
+[merge]
+	conflictstyle = diff3
