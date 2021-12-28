@@ -141,6 +141,11 @@ function vimdu () {
   vimd @{upstream}
 }
 
+function vimdm () {
+  git branch | grep ' main$' > /dev/null && default_branch=main || default_branch=master
+  vimd $default_branch...
+}
+
 function vimag () {
   local files="$(ag -l "$@")"
   vim "+/\\c\\v$1" $files
