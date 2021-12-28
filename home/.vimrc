@@ -1,4 +1,5 @@
 set nowrap
+set number
 " https://github.com/junegunn/vim-plug/wiki/faq/61895a373e6a888f585b51a5c53a0b11b970f812#automatic-installation
 if empty(glob('~/.vim/autoload/plug.vim'))
   silent !curl -fLo ~/.vim/autoload/plug.vim --create-dirs
