@@ -43,6 +43,7 @@
 	default = tracking
 	recurseSubmodules = check
 	followTags = true
+	autoSetupRemote = true
 [filter "media"]
 	clean = git-media-clean %f
 	smudge = git-media-smudge %f
