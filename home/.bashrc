@@ -147,19 +147,25 @@ function vimdm () {
 }
 
 function vimag () {
+  cd $(git rev-parse --show-toplevel)
   local files="$(ag -l "$@")"
   vim "+/\\c\\v$1" $files
+  cd -
 }
 
 function vimdag () {
+  cd $(git rev-parse --show-toplevel)
   git branch | grep ' main$' > /dev/null && default_branch=main || default_branch=master
   local files="$(git diff $default_branch... --name-only | xargs ag -l "$@")"
   vim "+/\\c\\v$1" $files
+  cd -
 }
 
 function vimgrep () {
+  cd $(git rev-parse --show-toplevel)
   local files="$(git grep -il "$@")"
   vim "+/\\c\\v$1" $files
+  cd -
 }
 
 export PATH="/home/josephfrazier/.linuxbrew/bin:$PATH"
