@@ -163,7 +163,7 @@ function vimdag () {
 
 function vimgrep () {
   cd $(git rev-parse --show-toplevel)
-  local files="$(git grep -il "$@")"
+  local files="$(git grep -il --extended-regexp "$@")"
   vim "+/\\c\\v$1" $files
   cd -
 }
