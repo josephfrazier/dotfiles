@@ -26,3 +26,5 @@ eval "$(rbenv init -)"
 
 # from `brew install rbenv`
 export RUBY_CONFIGURE_OPTS="--with-openssl-dir=$(brew --prefix openssl@1.1)"
+# Set PATH, MANPATH, etc., for Homebrew.
+eval "$(/opt/homebrew/bin/brew shellenv)"
