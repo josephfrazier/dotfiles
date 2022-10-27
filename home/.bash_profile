@@ -2,6 +2,9 @@
 export PATH=/usr/local/bin:$PATH
 export PATH="/usr/local/sbin:$PATH"
 
+# Set PATH, MANPATH, etc., for Homebrew.
+eval "$(/opt/homebrew/bin/brew shellenv)"
+
 # Get the aliases and functions
 if [ -f ~/.bashrc ]; then
         . ~/.bashrc
@@ -26,5 +29,3 @@ eval "$(rbenv init - bash)"
 
 # from `brew install rbenv`
 export RUBY_CONFIGURE_OPTS="--with-openssl-dir=$(brew --prefix openssl@3)"
-# Set PATH, MANPATH, etc., for Homebrew.
-eval "$(/opt/homebrew/bin/brew shellenv)"
