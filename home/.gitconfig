@@ -68,8 +68,6 @@
 	# log = less -RFX --pattern '^(commit|\\*)'
 	# diff = less -RFX --pattern '^diff'
 	difftool = true
-[credential]
-	helper = /usr/local/share/gcm-core/git-credential-manager-core
 [pull]
 	ff = only
 [checkout]
@@ -80,5 +78,7 @@
 	defaultBranch = main
 [merge]
 	conflictstyle = diff3
+[credential]
+	helper = /usr/local/share/gcm-core/git-credential-manager
 [credential "https://dev.azure.com"]
 	useHttpPath = true
