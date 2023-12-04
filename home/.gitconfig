@@ -64,6 +64,7 @@
 	verbose = true
 [rebase]
 	autosquash = true
+	autoStash = true
 [pager]
 	# log = less -RFX --pattern '^(commit|\\*)'
 	# diff = less -RFX --pattern '^diff'
@@ -78,6 +79,7 @@
 	defaultBranch = main
 [merge]
 	conflictstyle = diff3
+	autoStash = true
 [credential]
 	helper = /usr/local/share/gcm-core/git-credential-manager
 [credential "https://dev.azure.com"]
