@@ -60,6 +60,7 @@
 	indentHeuristic = true
 	submodule = diff
 	colorMoved = zebra
+	algorithm = histogram
 [commit]
 	verbose = true
 [rebase]
