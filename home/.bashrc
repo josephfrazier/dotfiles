@@ -254,3 +254,11 @@ export PATH=$PATH:$HOME/go/bin
 HEROKU_AC_BASH_SETUP_PATH=/Users/josephfrazier/Library/Caches/heroku/autocomplete/bash_setup && test -f $HEROKU_AC_BASH_SETUP_PATH && source $HEROKU_AC_BASH_SETUP_PATH;
 
 [ -f ~/.fzf.bash ] && source ~/.fzf.bash
+
+function diffpr () {
+ hub checkout "$1"
+ first_branch=$(git rev-parse --abbrev-ref HEAD)
+ hub checkout "$2"
+ second_branch=$(git rev-parse --abbrev-ref HEAD)
+ git diff "$first_branch" "$second_branch" ${@:3}
+}
