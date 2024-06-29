@@ -238,6 +238,7 @@ function dotenv () {
 
 # alias open=xdg-open
 
+export HOMESHICK_DIR=/opt/homebrew/opt/homeshick # for Apple Silicon Macs, see https://apple.stackexchange.com/questions/437618/why-is-homebrew-installed-in-opt-homebrew-on-apple-silicon-macs
 source "$HOME/.homesick/repos/homeshick/homeshick.sh"
 
 # from `brew install golang`:
