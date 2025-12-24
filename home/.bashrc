@@ -128,9 +128,11 @@ alias vim='vim -p'
 # `vimd @`
 # You can also run without arguments to open the files that have been changed since the last commit (i.e. unstaged changes)
 function vimd () {
-  cd $(git rev-parse --show-toplevel)
-  vim -c "let g:gitgutter_diff_base = '${1:-HEAD}'" $(git diff --diff-filter=d --name-only ${1:-HEAD} ${@:2})
-  cd -
+  (
+    cd $(git rev-parse --show-toplevel)
+    vim -c "let g:gitgutter_diff_base = '${1:-HEAD}'" $(git diff --diff-filter=d --name-only ${1:-HEAD} ${@:2})
+    cd -
+  )
 }
 
 function vimdh () {
@@ -147,25 +149,31 @@ function vimdm () {
 }
 
 function vimag () {
-  cd $(git rev-parse --show-toplevel)
-  local files="$(ag -l "$@")"
-  vim "+/\\c\\v$1" $files
-  cd -
+  (
+    cd $(git rev-parse --show-toplevel)
+    local files="$(ag -l "$@")"
+    vim "+/\\c\\v$1" $files
+    cd -
+  )
 }
 
 function vimdag () {
-  cd $(git rev-parse --show-toplevel)
-  git branch | grep ' main$' > /dev/null && default_branch=main || default_branch=master
-  local files="$(git diff $default_branch... --name-only | xargs ag -l $@)"
-  vim "+/\\c\\v$1" $files
-  cd -
+  (
+    cd $(git rev-parse --show-toplevel)
+    git branch | grep ' main$' > /dev/null && default_branch=main || default_branch=master
+    local files="$(git diff $default_branch... --name-only | xargs ag -l $@)"
+    vim "+/\\c\\v$1" $files
+    cd -
+  )
 }
 
 function vimgrep () {
-  cd $(git rev-parse --show-toplevel)
-  local files="$(fugit grep -il --extended-regexp $@)"
-  vim "+/\\c\\v$1" $files
-  cd -
+  (
+    cd $(git rev-parse --show-toplevel)
+    local files="$(fugit grep -il --extended-regexp $@)"
+    vim "+/\\c\\v$1" $files
+    cd -
+  )
 }
 
 export PATH="/home/josephfrazier/.linuxbrew/bin:$PATH"
