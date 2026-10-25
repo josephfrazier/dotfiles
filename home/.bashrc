@@ -219,12 +219,15 @@ function pullrequest () {
     git push --set-upstream josephfrazier $(git rev-parse --abbrev-ref HEAD):$(git rev-parse --abbrev-ref HEAD)
     # Find default branch
     git branch | grep ' main$' > /dev/null && default_branch=main || default_branch=master
+    # Update default branch from remote
+    git checkout $default_branch && git pull && git checkout -
     # Use concatenated commit messages as PR title/body
     git log --format=%B $default_branch.. --reverse > .git/PULLREQ_EDITMSG
     # Live-preview the rendered pull request markdown
     vmd .git/PULLREQ_EDITMSG &
     # Open the pull request
     hub pull-request --browse -b $default_branch --draft $@
+    # hub pull-request --browse -b $default_branch $@
     # Close the markdown preview
     ps aux | grep '[v]md/main/main.js .git/PULLREQ_EDITMSG' | awk '{ print $2 }' | xargs kill -9
 
