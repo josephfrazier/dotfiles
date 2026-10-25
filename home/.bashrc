@@ -216,7 +216,7 @@ function pullrequest () {
     # Make sure we have a fork.
     git remote | grep josephfrazier > /dev/null || hub fork
     # Push the current branch up to the fork
-    git push --set-upstream josephfrazier $(git rev-parse --abbrev-ref HEAD)
+    git push --set-upstream josephfrazier $(git rev-parse --abbrev-ref HEAD):$(git rev-parse --abbrev-ref HEAD)
     # Find default branch
     git branch | grep ' main$' > /dev/null && default_branch=main || default_branch=master
     # Use concatenated commit messages as PR title/body
