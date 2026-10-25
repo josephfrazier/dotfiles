@@ -88,3 +88,8 @@
 	helper = /usr/local/share/gcm-core/git-credential-manager
 [credential "https://dev.azure.com"]
 	useHttpPath = true
+[delta]
+	light = true
+[color "diff"]
+	newMoved = "#0f766e"
+	oldMoved = "#8b2f8a"
