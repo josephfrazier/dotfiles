@@ -177,8 +177,15 @@ function vimgrep () {
 }
 
 export NVM_DIR="$HOME/.nvm"
-[ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
-[ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
+# Fast path: put the default node on PATH without loading nvm.
+# Update the version when you change `nvm alias default`.
+export PATH="$NVM_DIR/versions/node/v24.22.1/bin:$PATH"
+# Load nvm only when it is called.
+nvm() {
+  unset -f nvm
+  \. "$NVM_DIR/nvm.sh"
+  nvm "$@"
+}
 
 if [ -f ~/.git-completion.bash ]; then
   . ~/.git-completion.bash
