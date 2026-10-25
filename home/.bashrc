@@ -176,12 +176,6 @@ function vimgrep () {
   )
 }
 
-export PATH="/home/josephfrazier/.linuxbrew/bin:$PATH"
-export PATH="/home/josephfrazier/.linuxbrew/sbin:$PATH"
-export MANPATH="/home/josephfrazier/.linuxbrew/share/man:$MANPATH"
-export INFOPATH="/home/josephfrazier/.linuxbrew/share/info:$INFOPATH"
-export XDG_DATA_DIRS="/home/josephfrazier/.linuxbrew/share:$XDG_DATA_DIRS"
-
 export NVM_DIR="$HOME/.nvm"
 [ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
 [ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
@@ -234,10 +228,6 @@ function pullrequest () {
     popd
   )
 }
-
-
-# added by travis gem
-[ -f /home/josephfrazier/.travis/travis.sh ] && source /home/josephfrazier/.travis/travis.sh
 
 function dotenv () {
   set -o allexport
